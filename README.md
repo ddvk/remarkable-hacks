@@ -1,11 +1,12 @@
 # Binary patches for the rM
-This are features that I find useful/wanted for me. If someone else would like to try them, they are welcome.
+Those are features that I find useful/wanted for me to have. If someone else would like to try them, they are welcome.
+
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable SA EULA by using them.
 There may be bugs, you may loose data, etc.*
 
-*The only guarantee is that there is no code with ill intent included*
+*The only guarantee is, that there is no ill intened code*
 
 
 ## Changes patch_01
@@ -42,11 +43,14 @@ You got this
 open a command line prompt (Win-R, type cmd, enter)
 ssh root@10.11.99.1 (type the password)
 or install Putty and enter 10.11.99.1 as address and root for username
+paste the automagic line
 
 # macOS
 open Spotlight (Cmd-Space) type Terminal, enter
 ssh root@10.11.99.1 (type the password)
+paste the automagic line
 
+# Automagic
 paste the following and press enter:
 ```
 wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh

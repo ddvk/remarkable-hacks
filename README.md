@@ -55,3 +55,12 @@ paste the following and press enter:
 ```
 wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh
 ```
+
+## Revert in case things go terribly wrong
+ssh
+```
+systemctl stop xochitl
+rm -fr .cache/remarkable/xochitl/qmlcache/*
+cp xochitl.backup /usr/bin/
+systemctl start xochitl
+```

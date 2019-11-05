@@ -4,7 +4,7 @@ This are features that I find useful/wanted for me. If someone else would like t
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable SA EULA by using them.
 There may be bugs, you may loose data, etc.*
-i
+
 *The only guarantee is that there is no code with ill intent included*
 
 

@@ -14,7 +14,7 @@ function cleanup(){
     rm /tmp/*crash* || true
     rm -fr .cache/remarkable/xochitl/qmlcache/*
 }
-wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$patch_name" -O- > $patch_name || exit 1
+wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$patch_name" -O $patch_name || exit 1
 
 echo "do: cleanup enter before exiting"
 #make sure we keep the original

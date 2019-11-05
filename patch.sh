@@ -11,7 +11,7 @@ function onexit(){
 }
 function cleanup(){
     echo "cleaning up"
-    rm /tmp/*crash*
+    rm /tmp/*crash* || true
     rm -fr .cache/remarkable/xochitl/qmlcache/*
 }
 wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$patch_name" -O- > $patch_name || exit 1

@@ -9,6 +9,9 @@ There may be bugs, you may loose data, etc.*
 *The only guarantee is, that there is no ill intened code*
 
 
+## Changes patch_02
+- UI button size reduced (in order to pack more buttons) + some alignment issues
+
 ## Changes patch_01
 - show always the first page (cover) in Overview
 - remove the thumbnails in listview
@@ -51,10 +54,11 @@ ssh root@10.11.99.1 (type the password)
 paste the automagic line
 
 # Automagic
-paste the following and press enter:
+paste the following and press enter (replace _01 with _02 etc to use a different patch):
 ```
-wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh
+wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_01
 ```
+
 
 # NB WARNING
 Always clear the qml cache before switching/running versions manually (the script already does that). Failing to do so will result in a crash

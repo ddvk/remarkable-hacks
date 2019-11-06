@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 binary_name=xochitl
-patch_name=patch_01
+patch_name=${1:-patch_01}
 
 trap onexit INT
 function onexit(){

@@ -63,7 +63,11 @@ Always clear the qml cache before switching/running versions manually (the scrip
 
 After making sure everything is ok (i.e. no crashes) if you want to make it permanent (until the next sw update), you can replace the original, before running the original or rebooting (make sure you read the WARNING above)
 ```
+#if you ran a different version
+rm -fr .cache/remarkable/xochitl/qmlcache/*
+
 cp xochitl.patched /usr/bin/xochtil
+systemctl start xochitl
 ```
 
 

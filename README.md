@@ -72,6 +72,6 @@ ssh
 ```
 systemctl stop xochitl
 rm -fr .cache/remarkable/xochitl/qmlcache/*
-cp xochitl.backup /usr/bin/
+cp xochitl.backup /usr/bin/xochitl
 systemctl start xochitl
 ```

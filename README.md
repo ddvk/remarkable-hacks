@@ -8,11 +8,11 @@ There may be bugs, you may loose data, etc.*
 
 *The only guarantee is, that there is no ill intened code*
 
-
-## Changes patch_02
+## Changes
+### patch_02
 - UI button size reduced (in order to pack more buttons) + some alignment issues
 
-## Changes patch_01
+### patch_01
 - show always the first page (cover) in Overview
 - remove the thumbnails in listview
 - reduce the height of the items in listview

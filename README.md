@@ -9,6 +9,10 @@ There may be bugs, you may loose data, etc.*
 *The only guarantee is, that there is no ill intened code*
 
 ## Changes
+### patch_03
+- persistent bookmarks
+- jump forth
+
 ### patch_02
 - UI button size reduced (in order to pack more buttons) + some alignment issues
 

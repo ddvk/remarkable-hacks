@@ -29,8 +29,8 @@ There may be bugs, you may loose data, etc.*
 
 
 ## TODO
-- bookmarks
 - change the default tool
+- drawing primitives?
 
 
 ## Things that I would like to do but are hard
@@ -60,7 +60,7 @@ paste the automagic line
 # Automagic
 paste the following and press enter (replace _01 with _02 etc to use a different patch):
 ```
-wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_01
+wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_03
 ```
 
 

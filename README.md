@@ -8,10 +8,12 @@ There may be bugs, you may loose data, etc.*
 
 *The only guarantee is, that there is no ill intened code*
 
+![Screenshot](docs/images/screenshot.png)
+
 ## Changes
 ### patch_03
-- persistent bookmarks
-- jump forth
+- Bookmarks (persistent, saved besides the original file with .bookm extension)
+- jump forth and back
 
 ### patch_02
 - UI button size reduced (in order to pack more buttons) + some alignment issues
@@ -88,4 +90,3 @@ cp xochitl.backup /usr/bin/xochitl
 systemctl start xochitl
 ```
 
-![Screenshot](docs/images/screenshot.png)

@@ -6,7 +6,7 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 *The files are offered without any warranty and you will be violating the reMarkable SA EULA by using them.
 There may be bugs, you may loose data, etc.*
 
-*The only guarantee is, that there is no ill intened code*
+*The only guarantee is, that there is no ill intended code*
 
 ![Screenshot](docs/images/screenshot.png)
 
@@ -66,7 +66,7 @@ paste the automagic line
 # Automagic
 paste the following and press enter (replace _01 with _02 etc to use a different patch):
 ```
-wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_03
+wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_04
 ```
 
 

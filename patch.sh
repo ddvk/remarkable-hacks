@@ -6,17 +6,25 @@ patch_name=${1:-patch_01}
 trap onexit INT
 function onexit(){
     cleanup
-    echo "you could replace the binary"
+    cat <<-EOF "If everything worked, you may replace the binary to make it permanent with the following:
+    cp $binary_name.patched /usr/bin/$binary_name
+	EOF
     exit 0
 }
 function cleanup(){
     echo "cleaning up"
-    rm /tmp/*crash* || true
+    rm /tmp/*crash* 2> /dev/null || true
     rm -fr .cache/remarkable/xochitl/qmlcache/*
 }
+
+if [ ! $(</etc/version) -eq "20190904134033" ]; then
+	echo "Wrong version, works only on 1.8.1.1"
+	exit 1
+fi
+
+
 wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$patch_name" -O $patch_name || exit 1
 
-echo "do: cleanup enter before exiting"
 #make sure we keep the original
 if [ ! -f $binary_name.backup ]; then
     cp /usr/bin/$binary_name $binary_name.backup

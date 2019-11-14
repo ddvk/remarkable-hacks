@@ -11,6 +11,10 @@ There may be bugs, you may loose data, etc.*
 ![Screenshot](docs/images/screenshot.png)
 
 ## Changes
+### patch_04
+- bookmark jumps added to the jump history
+- cancel direct gotopage returns to document
+- (bugfix) go to bookmarked folder in list mode
 ### patch_03
 - Bookmarks (persistent, saved besides the original file with .bookm extension)
 - jump forth and back

@@ -74,7 +74,7 @@ After making sure everything is ok (i.e. no crashes) if you want to make it perm
 #if you ran a different version
 rm -fr .cache/remarkable/xochitl/qmlcache/*
 
-cp xochitl.patched /usr/bin/xochtil
+cp xochitl.patched /usr/bin/xochitl
 systemctl start xochitl
 ```
 

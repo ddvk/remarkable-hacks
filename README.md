@@ -8,10 +8,12 @@ There may be bugs, you may loose data, etc.*
 
 *The only guarantee is, that there is no ill intened code*
 
+![Screenshot](docs/images/screenshot.png)
+
 ## Changes
 ### patch_03
-- persistent bookmarks
-- jump forth
+- Bookmarks (persistent, saved besides the original file with .bookm extension)
+- jump forth and back
 
 ### patch_02
 - UI button size reduced (in order to pack more buttons) + some alignment issues
@@ -29,8 +31,8 @@ There may be bugs, you may loose data, etc.*
 
 
 ## TODO
-- bookmarks
 - change the default tool
+- drawing primitives?
 
 
 ## Things that I would like to do but are hard
@@ -60,7 +62,7 @@ paste the automagic line
 # Automagic
 paste the following and press enter (replace _01 with _02 etc to use a different patch):
 ```
-wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_01
+wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_03
 ```
 
 
@@ -87,3 +89,4 @@ rm -fr .cache/remarkable/xochitl/qmlcache/*
 cp xochitl.backup /usr/bin/xochitl
 systemctl start xochitl
 ```
+

@@ -6,9 +6,13 @@ patch_name=${1:-patch_01}
 trap onexit INT
 function onexit(){
     cleanup
-    cat <<-EOF "If everything worked, you may replace the binary to make it permanent with the following:
+    echo "
+If everything worked, you may replace the binary to make it permanent with the following:
+
     cp $binary_name.patched /usr/bin/$binary_name
-	EOF
+
+To start the ui:
+    systemctl start xochitl"
     exit 0
 }
 function cleanup(){

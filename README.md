@@ -97,3 +97,6 @@ cp xochitl.backup /usr/bin/xochitl
 systemctl start xochitl
 ```
 
+## Demo
+<blockquote class="reddit-card"><a href="https://www.reddit.com/r/RemarkableTablet/comments/dw7toa/i_had_a_slow_pdf_managed_to_fix_it_by_replacing/">I had a slow pdf, managed to fix it by replacing one of the libraries (and bookmarks progress)</a> from <a href="http://www.reddit.com/r/RemarkableTablet">r/RemarkableTablet</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>

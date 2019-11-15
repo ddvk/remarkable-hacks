@@ -10,6 +10,7 @@ There may be bugs, you may loose data, etc.*
 
 ## Demo
 [Demo](https://www.reddit.com/r/RemarkableTablet/comments/dw7toa/i_had_a_slow_pdf_managed_to_fix_it_by_replacing/)
+
 ![Screenshot](docs/images/screenshot.png)
 
 ## Changes

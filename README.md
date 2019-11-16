@@ -73,7 +73,7 @@ paste the automagic line
 # Automagic
 paste the following and press enter (replace _01 with _02 etc to use a different patch):
 ```
-wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_05
+wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_06
 ```
 ### Notes
 patches are cumulative (the last one contains all previous changes and gets updated with bugfixes)

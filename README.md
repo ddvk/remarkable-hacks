@@ -8,6 +8,9 @@ There may be bugs, you may loose data, etc.*
 
 *The only guarantee is, that there is no ill intended code*
 
+## Demo
+[Demo](https://www.reddit.com/r/RemarkableTablet/comments/dw7toa/i_had_a_slow_pdf_managed_to_fix_it_by_replacing/)
+
 ![Screenshot](docs/images/screenshot.png)
 
 ## Changes
@@ -70,8 +73,11 @@ paste the automagic line
 # Automagic
 paste the following and press enter (replace _01 with _02 etc to use a different patch):
 ```
-wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_04
+wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_05
 ```
+### Notes
+patches are cumulative (the last one contains all previous changes and gets updated with bugfixes)
+a patch can be applied more than once, it's more of a snapshot really, you can go back to a previous version
 
 
 # NB WARNING
@@ -97,4 +103,3 @@ rm -fr .cache/remarkable/xochitl/qmlcache/*
 cp xochitl.backup /usr/bin/xochitl
 systemctl start xochitl
 ```
-

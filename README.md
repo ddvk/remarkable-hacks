@@ -11,13 +11,17 @@ There may be bugs, you may loose data, etc.*
 ![Screenshot](docs/images/screenshot.png)
 
 ## Changes
+### patch_06
+- gotopage (numpad input)
+### patch_05
+- bookmark for the last page (go to last page)
 ### patch_04
 - bookmark jumps added to the jump history
 - cancel direct gotopage returns to document
 - (bugfix) go to bookmarked folder in list mode
 ### patch_03
 - Bookmarks (persistent, saved besides the original file with .bookm extension)
-- jump forth and back
+- jump forth and back (toc, goto page or bookmark)
 
 ### patch_02
 - UI button size reduced (in order to pack more buttons) + some alignment issues
@@ -29,7 +33,7 @@ There may be bugs, you may loose data, etc.*
 - undo/redo buttons latency
 - toc button
 - gotopage button
-- jump list with back button (on page change by toc or gotopage)
+- jump list with back button (on page change by toc ,gotopage)
 - scroll by a whole page in toc and listview
 - (kinda bugfix) do not reset the table of contents everytime it is shown
 

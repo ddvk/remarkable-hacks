@@ -11,8 +11,7 @@ There may be bugs, you may loose data, your device may crash, etc.*
 ## Demo
 [Demo](https://www.reddit.com/r/RemarkableTablet/comments/dw7toa/i_had_a_slow_pdf_managed_to_fix_it_by_replacing/)
 
-![Screenshot](docs/images/screenshot_bookmarks.png)
-![Screenshot](docs/images/screenshot_pinpad.png)
+![Screenshot1](docs/images/screenshot_bookmarks.png) ![Screenshot2](docs/images/screenshot_pinpad.png)
 
 ## Changes
 ### patch_06

@@ -4,18 +4,18 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable SA EULA by using them.
-There may be bugs, you may loose data, etc.*
+There may be bugs, you may loose data, your device may crash, etc.*
 
 *The only guarantee is, that there is no ill intended code*
 
 ## Demo
 [Demo](https://www.reddit.com/r/RemarkableTablet/comments/dw7toa/i_had_a_slow_pdf_managed_to_fix_it_by_replacing/)
 
-![Screenshot](docs/images/screenshot.png)
+![Screenshot1](docs/images/screenshot_bookmarks.png) ![Screenshot2](docs/images/screenshot_numpad.png)
 
 ## Changes
 ### patch_06
-- gotopage (numpad input)
+- gotopage (custom numpad input) 
 ### patch_05
 - bookmark for the last page (go to last page)
 ### patch_04
@@ -27,7 +27,7 @@ There may be bugs, you may loose data, etc.*
 - jump forth and back (toc, goto page or bookmark)
 
 ### patch_02
-- UI button size reduced (in order to pack more buttons) + some alignment issues
+- UI button size reduced by 16% (in order to pack more buttons) + some alignment issues
 
 ### patch_01
 - show always the first page (cover) in Overview
@@ -41,15 +41,22 @@ There may be bugs, you may loose data, etc.*
 - (kinda bugfix) do not reset the table of contents everytime it is shown
 
 
+## Known issues
+- bookmark position stays the same in landscape mode
+- gotopage and other buttons missing in landsacpe mode (i rarely use landscape mode)
+- bookmark menu stays open even until closed (feature/ bug when opening a new document) 
+- numpad does not reset to 0 on close
+- numpad does not validate the input (0 = first page, > pagecount = last page)
+
 ## TODO
-- change the default tool
-- drawing primitives?
+- change the default tool on document create (i prefer the fineliner, thickness 1)
+- fix the selection box dimensions (vertical or horizonatl straight lines are hard to manage)
+- fix palm rejection timeout (cannot swipe pages, button input ignored, for 1-2 seconds after raising the pen)
 
-
-## Things that I would like to do but are hard
+## Things that I would like to do, but are hard
 - pdf link navigation
 - djvu support
-
+- drawing primitives?
 
 ## Installation
 on the device (Rm->About->Copyright->General Information) write down, remember the password shown

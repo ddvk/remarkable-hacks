@@ -14,6 +14,10 @@ There may be bugs, you may loose data, your device may crash, etc.*
 ![Screenshot1](docs/images/screenshot_bookmarks.png) ![Screenshot2](docs/images/screenshot_numpad.png)
 
 ## Changes
+### patch_07 (probably the last one for 1.8)
+- remove the close button from the minimal UI
+- bookmarks format changed to dict, autoconversion (to allow naming them later), older version cannot read the new format
+
 ### patch_06
 - gotopage (custom numpad input) 
 ### patch_05
@@ -23,7 +27,7 @@ There may be bugs, you may loose data, your device may crash, etc.*
 - cancel direct gotopage returns to document
 - (bugfix) go to bookmarked folder in list mode
 ### patch_03
-- Bookmarks (persistent, saved besides the original file with .bookm extension)
+- Bookmarks (persistent, saved beside the original file with .bookm extension)
 - jump forth and back (toc, goto page or bookmark)
 
 ### patch_02
@@ -56,7 +60,6 @@ There may be bugs, you may loose data, your device may crash, etc.*
 ## Things that I would like to do, but are hard
 - pdf link navigation
 - djvu support
-- drawing primitives?
 
 ## Installation
 on the device (Rm->About->Copyright->General Information) write down, remember the password shown

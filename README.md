@@ -9,12 +9,11 @@ There may be bugs, you may loose data, your device may crash, etc.*
 *The only guarantee is, that there is no ill intended code*
 
 ## Demo
-[Demo](https://www.reddit.com/r/RemarkableTablet/comments/dw7toa/i_had_a_slow_pdf_managed_to_fix_it_by_replacing/)
 
 ![Screenshot1](docs/images/screenshot_2011_bookmarks.png) ![Screenshot1](docs/images/screenshot_2011_numpad.png)
 
 ## Changes
-### patch_201 (based on 2.0.1.1)
+### patch_201 (based on 2.0.1.1, early beta)
 - gotopage (custom numpad input) 
 - bookmark for the last page (go to last page)
 - (bugfix) go to bookmarked folder in list mode
@@ -35,6 +34,7 @@ There may be bugs, you may loose data, your device may crash, etc.*
 - numpad does not reset to 0 on close
 - numpad does not validate the input (0 = first page, > pagecount = last page)
 - listview scrolling is buggy
+- had to remove the tooltips / tutorial
 
 ## TODO
 - change the default tool on document create (i prefer the fineliner, thickness 1)
@@ -96,6 +96,6 @@ ssh
 ```
 systemctl stop xochitl
 rm -fr .cache/remarkable/xochitl/qmlcache/*
-cp xochitl.backup /usr/bin/xochitl
+cp xochitl.2011 /usr/bin/xochitl
 systemctl start xochitl
 ```

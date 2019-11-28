@@ -11,7 +11,7 @@ There may be bugs, you may loose data, your device may crash, etc.*
 ## Demo
 [Demo](https://www.reddit.com/r/RemarkableTablet/comments/dw7toa/i_had_a_slow_pdf_managed_to_fix_it_by_replacing/)
 
-![Screenshot1](docs/images/screenshot_bookmarks.png) ![Screenshot2](docs/images/screenshot_numpad.png)
+![Screenshot1](docs/images/screenshot_2011_bookmarks.png) ![Screenshot1](docs/images/screenshot_2011_numpad.png)
 
 ## Changes
 ### patch_201 (based on 2.0.1.1)
@@ -67,7 +67,7 @@ paste the automagic line
 # Automagic
 paste the following and press enter (replace _01 with _02 etc to use a different patch):
 ```
-wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_06
+wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O- | sh -s -- patch_201
 ```
 you will see a bunch of log messages, the app will start, play with it but press **CTRL-C** to stop it when done (DON'T LEAVE IT JUST RUNNING) and follow the instructions (i.e make it permanent or just start the stock one). 
 

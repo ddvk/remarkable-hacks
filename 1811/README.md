@@ -1,3 +1,4 @@
+# Legacy / Version 1.8.1.1
 # Binary patches for the rM
 Those are features that I find useful/wanted for me to have. If someone else would like to try them, they are welcome.
 
@@ -14,19 +15,36 @@ There may be bugs, you may loose data, your device may crash, etc.*
 ![Screenshot1](docs/images/screenshot_bookmarks.png) ![Screenshot2](docs/images/screenshot_numpad.png)
 
 ## Changes
-### patch_201 (based on 2.0.1.1)
+### patch_07 (probably the last one for 1.8)
+- remove the close button from the minimal UI
+- bookmarks format changed to dict, autoconversion (to allow naming them later), older version cannot read the new format
+
+### patch_06
 - gotopage (custom numpad input) 
+### patch_05
 - bookmark for the last page (go to last page)
+### patch_04
+- bookmark jumps added to the jump history
+- cancel direct gotopage returns to document
 - (bugfix) go to bookmarked folder in list mode
+### patch_03
 - Bookmarks (persistent, saved beside the original file with .bookm extension)
 - jump forth and back (toc, goto page or bookmark)
+
+### patch_02
 - UI button size reduced by 16% (in order to pack more buttons) + some alignment issues
+
+### patch_01
 - show always the first page (cover) in Overview
 - remove the thumbnails in listview
 - reduce the height of the items in listview
+- undo/redo buttons latency
 - toc button
+- gotopage button
+- jump list with back button (on page change by toc ,gotopage)
 - scroll by a whole page in toc and listview
-- (bugfix) do not reset the table of contents everytime it is shown
+- (kinda bugfix) do not reset the table of contents everytime it is shown
+
 
 ## Known issues
 - bookmark position stays the same in landscape mode
@@ -34,7 +52,6 @@ There may be bugs, you may loose data, your device may crash, etc.*
 - bookmark menu stays open even until closed (feature/ bug when opening a new document) 
 - numpad does not reset to 0 on close
 - numpad does not validate the input (0 = first page, > pagecount = last page)
-- listview scrolling is buggy
 
 ## TODO
 - change the default tool on document create (i prefer the fineliner, thickness 1)

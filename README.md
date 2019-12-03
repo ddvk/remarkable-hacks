@@ -1,4 +1,5 @@
 # Binary patches for the rM
+## Version 2.0.1.1
 Those are features that I find useful/wanted for me to have. If someone else would like to try them, they are welcome.
 
 
@@ -10,14 +11,16 @@ There may be bugs, you may loose data, your device may crash, etc.*
 
 ## Demo
 
-![Screenshot1](docs/images/screenshot_2011_bookmarks.png) ![Screenshot1](docs/images/screenshot_2011_numpad.png)
+![Screenshot1](docs/images/screenshot_2011_bookmarks.png)
+![Screenshot1](docs/images/screenshot_2011_numpad.png)
+![Screenshot1](docs/images/screenshot_2011_numpad.png)
 
 ## Changes
 ### patch_202
 - add naming of bookmarks (press and hold the bookmark in the list)
 - removed the close button
-- wifi button in the share  menu (for easy on/off)
-### patch_201 (based on 2.0.1.1, early beta)
+- toggle wifi button in the share menu (for easy on/off)
+### patch_201
 - gotopage (custom numpad input) 
 - bookmark for the last page (go to last page)
 - (bugfix) go to bookmarked folder in list mode

@@ -14,6 +14,7 @@ There may be bugs, you may loose data, your device may crash, etc.*
 
 ![Screenshot1](docs/images/screenshot_bookmarks.png)
 ![Screenshot1](docs/images/screenshot_2011_numpad.png)
+![Screenshot1](docs/images/screenshot_share.png)
 
 ## Changes
 

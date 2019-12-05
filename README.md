@@ -15,6 +15,11 @@ There may be bugs, you may loose data, your device may crash, etc.*
 ![Screenshot1](docs/images/screenshot_2011_numpad.png)
 
 ## Changes
+### patch_203
+- change GoToPage icon to current/number of pages
+- fix keyboard losing focus on bookmark edit (scroll disabled may impact file exporting)
+- do not display current page in the footer (goto page icon)
+- fix: do not write on toc dialog
 ### patch_202
 - add naming of bookmarks (press and hold the bookmark in the list)
 - removed the close button

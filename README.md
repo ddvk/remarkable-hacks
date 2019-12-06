@@ -23,7 +23,7 @@ There may be bugs, you may loose data, your device may crash, etc.*
 
 ### patch_203
 - change GoToPage icon to current/number of pages
-- fix keyboard losing focus on bookmark edit (scroll disabled may impact file exporting)
+- (bugfix) keyboard losing focus on bookmark edit (scroll disabled and may impact file exporting)
 - do not display current page in the footer (goto page icon)
 - fix: do not write on toc dialog
 
@@ -48,14 +48,12 @@ There may be bugs, you may loose data, your device may crash, etc.*
 
 ## Known issues
 - bookmark position stays the same in landscape mode
-- gotopage and other buttons missing in landsacpe mode (i rarely use landscape mode)
-- bookmark menu stays open even until closed (feature/ bug when opening a new document) 
-- numpad does not reset to 0 on close
 - numpad does not validate the input (0 = first page, > pagecount = last page)
 - listview scrolling is buggy
 - had to remove the tooltips / tutorial
+- dialog for filename / mesage body no longer scrollable
 
-## TODO
+## Nice to have
 - change the default tool on document create (i prefer the fineliner, thickness 1)
 - fix the selection box dimensions (vertical or horizonatl straight lines are hard to manage)
 - fix palm rejection timeout (cannot swipe pages, button input ignored, for 1-2 seconds after raising the pen)
@@ -64,7 +62,7 @@ There may be bugs, you may loose data, your device may crash, etc.*
 - pdf link navigation
 - djvu support
 
-## Installation
+# Installation
 on the device (Rm->About->Copyright->General Information) write down, remember the password shown
 
 
@@ -72,13 +70,13 @@ on the device (Rm->About->Copyright->General Information) write down, remember t
 You got this
 
 
-# Windows 10
+## Windows 10
 open a command line prompt (Win-R, type cmd, enter)
 ssh root@10.11.99.1 (type the password)
 or install Putty and enter 10.11.99.1 as address and root for username
 paste the automagic line
 
-# macOS
+## macOS
 open Spotlight (Cmd-Space) type Terminal, enter
 ssh root@10.11.99.1 (type the password)
 paste the automagic line

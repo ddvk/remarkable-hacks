@@ -5,7 +5,7 @@ backup_file="${binary_name}.2011"
 current_version="20191123105338"
 
 function auto_install(){
-    echo -n "Do you want to make it permanent [N/y]?"
+    echo -n "If everything worked, do you want to make it permanent [N/y]?"
     read yn
     case $yn in 
         [Yy]* ) 
@@ -21,16 +21,7 @@ function auto_install(){
 trap onexit INT
 function onexit(){
     cleanup
-    auto_install ||
-    echo "
-If everything worked, you may replace the binary to make it permanent with the following:
-
-    cp $binary_name.patched /usr/bin/$binary_name
-
-To start the ui:
-
-    systemctl start xochitl
-    "
+    auto_install || (echo "Staring the original"; systemctl start xochitl)
 
     exit 0
 }

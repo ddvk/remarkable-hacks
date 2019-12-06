@@ -1,20 +1,37 @@
-#!/bin/sh
 set -e
 binary_name=xochitl
 patch_name=${1:-rollback}
 backup_file="${binary_name}.2011"
 current_version="20191123105338"
 
+function auto_install(){
+    echo -n "Do you want to make it permanent [N/y]?"
+    read yn
+    case $yn in 
+        [Yy]* ) 
+            echo "Making it permanent"
+            cp $binary_name.patched /usr/bin/$binary_name
+            echo "Starting the UI"
+            systemctl start xochitl
+            return 0
+            ;;
+    esac
+    return 1
+}
 trap onexit INT
 function onexit(){
     cleanup
+    auto_install ||
     echo "
 If everything worked, you may replace the binary to make it permanent with the following:
 
     cp $binary_name.patched /usr/bin/$binary_name
 
 To start the ui:
-    systemctl start xochitl"
+
+    systemctl start xochitl
+    "
+
     exit 0
 }
 function cleanup(){

@@ -1,27 +1,11 @@
 set -e
 binary_name=xochitl
-patch_name=${1:-rollback}
-current_version="20191123105338"
-version="2011"
 
-function auto_install(){
-    echo -n "If everything worked, do you want to make it permanent [N/y]?"
-    read yn
-    case $yn in 
-        [Yy]* ) 
-            echo "Making it permanent"
-            cp $binary_name.patched /usr/bin/$binary_name
-            echo "Starting the UI"
-            systemctl start xochitl
-            return 0
-            ;;
-    esac
-    return 1
-}
 trap onexit INT
+
 function onexit(){
     cleanup
-    auto_install || (echo "Staring the original"; systemctl start xochitl)
+    auto_install
 
     exit 0
 }
@@ -32,14 +16,56 @@ function cleanup(){
 }
 
 function rollback(){
-    echo "TODO"
-    exit
+    systemctl stop xochitl
+    cleanup
+    cp $backup_file /usr/bin/xochitl
+    systemctl start xochitl
+    exit 0
 }
 
-if [ ! $(</etc/version) -eq "$current_version" ]; then
-	echo "Wrong version, works only on 2.0.1.1"
-	exit 1
-fi
+function auto_install(){
+    echo -n "If everything worked, do you want to make it permanent [N/y]?"
+    read yn
+    case $yn in 
+        [Yy]* ) 
+            echo "Making it permanent"
+            mv $binary_name.patched /usr/bin/$binary_name
+            echo "Starting the UI"
+            systemctl start xochitl
+            return 0
+            ;;
+        * )
+            rm $binary_name.patched
+            echo "Staring the original"
+            systemctl start xochitl
+            ;;
+    esac
+    return 1
+}
+
+
+case $(</etc/version) in
+    "20191204111121" )
+r       patch_name=${1:-patch_220}
+        version="2020"
+        echo "Version 2.0.2.0"
+        ;;
+    "20191123105338" )
+        patch_name=${1:-patch_204}
+        version="2011"
+        echo "Version 2.0.1.1"
+        ;;
+        
+    "20190904134033" )
+        patch_name=${1:-patch_07}
+        version="1811"
+        echo "Version 1.8.1.1"
+        ;;
+    * )
+        echo "Unsupported version"
+        exit 1
+        ;;
+esac
 
 if [ -z "$SKIP_DOWNLOAD" ]; then
     wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$version/$patch_name" -O $patch_name || exit 1
@@ -60,9 +86,9 @@ cp $backup_file $binary_name
 
 bspatch $binary_name $binary_name.patched $patch_name
 chmod +x xochitl.patched
-#clear the cache
+
 systemctl stop xochitl
-#it goes into  and endless reboot due to qml mismatch
+#just to be sure, it goes into and endless reboot due to qml mismatch
 systemctl stop remarkable-fail
  
 cleanup

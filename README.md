@@ -1,6 +1,6 @@
 # Binary patches for the rM
 
-## Version 2.0.1.1
+## Versions 1.8.1.1-2.0.2.0
 Those are features that I find useful/wanted for me to have. If someone else would like to try them, they are welcome.
 
 
@@ -17,34 +17,9 @@ There may be bugs, you may loose data, your device may crash, etc.*
 ![Screenshot1](docs/images/screenshot_share.png)
 
 ## Changes
-
-### patch_204
-- add a toggle for swipe enable/disable
-
-### patch_203
-- change GoToPage icon to current/number of pages
-- (bugfix) keyboard losing focus on bookmark edit (scroll disabled and may impact file exporting)
-- do not display current page in the footer (goto page icon)
-- fix: do not write on toc dialog
-
-### patch_202
-- add naming of bookmarks (press and hold the bookmark in the list)
-- removed the close button
-- toggle wifi button in the share menu (for easy on/off)
-
-### patch_201
-- gotopage (custom numpad input) 
-- bookmark for the last page (go to last page)
-- (bugfix) go to bookmarked folder in list mode
-- Bookmarks (persistent, saved beside the original file with .bookm extension)
-- jump forth and back (toc, goto page or bookmark)
-- UI button size reduced by 16% (in order to pack more buttons) + some alignment issues
-- show always the first page (cover) in Overview
-- remove the thumbnails in listview
-- reduce the height of the items in listview
-- toc button
-- scroll by a whole page in toc and listview
-- (bugfix) do not reset the table of contents everytime it is shown
+- [2.0.2.0](patches/2020/readme.md)
+- [2.0.1.1](patches/2011/readme.md)
+- [1.8.1.1](patches/1811/readme.md)
 
 ## Known issues
 - bookmark position stays the same in landscape mode
@@ -82,11 +57,11 @@ ssh root@10.11.99.1 (type the password)
 paste the automagic line
 
 # Automagic
-paste the following and press enter (replace _01 with _02 etc to use a different patch):
+paste the following and press enter:
 ```
-sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" _ patch_204
+sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" 
 ```
-you will see a bunch of log messages, the app will start, play with it but press **CTRL-C** to stop it when done (DON'T LEAVE IT JUST RUNNING) and follow the instructions (i.e make it permanent or just start the stock one). 
+The app should start, play with it, but press **CTRL-C** to stop it when done (DON'T LEAVE IT JUST RUNNING) and follow the instructions (i.e make it permanent or just start the stock one). 
 
 ### Notes
 patches are cumulative (the last one contains all previous changes and gets updated with bugfixes)

@@ -1,8 +1,8 @@
 set -e
 binary_name=xochitl
 patch_name=${1:-rollback}
-backup_file="${binary_name}.2011"
 current_version="20191123105338"
+version="2011"
 
 function auto_install(){
     echo -n "If everything worked, do you want to make it permanent [N/y]?"
@@ -41,13 +41,15 @@ if [ ! $(</etc/version) -eq "$current_version" ]; then
 	exit 1
 fi
 
+if [ -z "$SKIP_DOWNLOAD" ]; then
+    wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$version/$patch_name" -O $patch_name || exit 1
+fi
+
+backup_file="${binary_name}.${version}"
 
 if [ $patch_name == "rollback" ]; then
     rollback
-fi
-
-if [ -z "$SKIP_DOWNLOAD" ]; then
-    wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$patch_name" -O $patch_name || exit 1
+    exit 0
 fi
 
 #make sure we keep the original

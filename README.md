@@ -12,7 +12,7 @@ There may be bugs, you may loose data, your device may crash, etc.*
 
 ## Demo
 
-![Screenshot1](docs/images/screenshot_bookmarks.png)
+![Screenshot1](docs/images/screenshot_2020_bookmarks.png)
 ![Screenshot1](docs/images/screenshot_2011_numpad.png)
 ![Screenshot1](docs/images/screenshot_share.png)
 
@@ -64,7 +64,7 @@ sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/pat
 to try a different patch:
 
 ```
-sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)"_ patch_xxx 
+sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" _ patch_xxx 
 ```
 The app should start, play with it, but press **CTRL-C** to stop it when done (DON'T LEAVE IT JUST RUNNING) and follow the instructions (i.e make it permanent or just start the stock one). 
 

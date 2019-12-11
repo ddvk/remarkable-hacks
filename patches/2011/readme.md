@@ -1,10 +1,4 @@
-### patch_221
-- moved the bookmark button to the top (right/left) corner
-- long press in the corner bookmarks the page and opens the bookmark edit dialog
-- bookmarks not really deleted on toggle (cleanup after document load)
-- visual indicator on the bookmark for the current page
-
-### patch_220
+### patch_204
 - add a toggle for swipe enable/disable
 - change GoToPage icon to current/number of pages
 - fix keyboard losing focus on bookmark edit (scroll disabled may impact file exporting)

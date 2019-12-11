@@ -61,6 +61,11 @@ paste the following and press enter:
 ```
 sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" 
 ```
+to try a different patch:
+
+```
+sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)"_ patch_xxx 
+```
 The app should start, play with it, but press **CTRL-C** to stop it when done (DON'T LEAVE IT JUST RUNNING) and follow the instructions (i.e make it permanent or just start the stock one). 
 
 ### Notes

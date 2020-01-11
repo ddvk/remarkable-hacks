@@ -1,3 +1,7 @@
+### patch_222
+- add currentLayer / background visibility toggle button (the page has to have modifications to work)
+- reduce show menu button and change position 
+
 ### patch_221
 - moved the bookmark button to the top (right/left) corner
 - long press in the corner bookmarks the page and opens the bookmark edit dialog

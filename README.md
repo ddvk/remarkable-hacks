@@ -6,7 +6,7 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable SA EULA by using them.
-There may be bugs, you may loose data, your device may crash, etc.*
+There may be bugs, you may lose data, your device may crash, etc.*
 
 *The only guarantee is, that there is no ill intended code*
 

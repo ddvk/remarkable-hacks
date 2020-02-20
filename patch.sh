@@ -1,5 +1,8 @@
 set -e
 binary_name=xochitl
+# quick hack for low disk space
+# TODO check free space
+journalctl --vacuum-time=1m
 
 trap onexit INT
 

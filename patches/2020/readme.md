@@ -1,3 +1,5 @@
+### patch_223
+- add recent files history / faster file switching
 ### patch_222
 - add currentLayer / background visibility toggle button (the page has to have modifications to work)
 - reduce show menu button and change position 

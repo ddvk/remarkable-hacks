@@ -1,3 +1,16 @@
+### patch_224
+- ui: current brush width/color
+- long presses:
+-   left: go to first page 
+-   right: go to last page
+-   home: show recent files menu
+
+#### experimental: 
+- pressing left and right toggles "zen" mode
+- zen mode (NB: keys do not work when the stylus is near the screen)
+    - left key toggles eraser/ last writing tool
+
+
 ### patch_223
 - add recent files history / faster file switching
 ### patch_222

@@ -15,6 +15,7 @@ There may be bugs, you may lose data, your device may crash, etc.*
 ![Screenshot1](docs/images/screenshot_2020_bookmarks.png)
 ![Screenshot1](docs/images/screenshot_2011_numpad.png)
 ![Screenshot1](docs/images/screenshot_share.png)
+![Screenshot1](docs/images/screenshot_recent_files.png)
 
 ## Changes
 - [2.0.2.0](patches/2020/readme.md)

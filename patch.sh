@@ -48,6 +48,11 @@ function auto_install(){
 
 
 case $(</etc/version) in
+    "20200214121052" )
+        patch_name=${1:-patch_01}
+        version="2106"
+        echo "Version 2.1.0.6"
+        ;;
     "20191204111121" )
         patch_name=${1:-patch_224}
         version="2020"

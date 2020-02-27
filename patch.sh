@@ -1,8 +1,18 @@
 set -e
 binary_name=xochitl
-# quick hack for low disk space
-# TODO check free space
-journalctl --vacuum-time=1m
+
+function checkspace(){
+    available=$(df / | tail -n1 | awk '{print $4}');
+    let available=$available/1024
+    if [ $available -lt 3 ];then
+      echo "Less than 3MB free, ${available}MB"
+      return 1;
+    fi;
+}
+
+checkspace || (echo "Will try to free some"; journalctl --vacuum-time=1m)
+checkspace || (echo "Aborting"; exit 10)
+echo "Disk space seems to be enough"
 
 trap onexit INT
 

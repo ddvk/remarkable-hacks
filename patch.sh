@@ -85,15 +85,16 @@ case $(</etc/version) in
         ;;
 esac
 
-if [ -z "$SKIP_DOWNLOAD" ]; then
-    wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$version/$patch_name" -O $patch_name || exit 1
-fi
 
 backup_file="${binary_name}.${version}"
 
 if [ $patch_name == "rollback" ]; then
     rollback
     exit 0
+fi
+
+if [ -z "$SKIP_DOWNLOAD" ]; then
+    wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$version/$patch_name" -O $patch_name || exit 1
 fi
 
 #make sure we keep the original

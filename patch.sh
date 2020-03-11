@@ -64,7 +64,7 @@ case $(</etc/version) in
         echo "Version 2.1.1.0"
         ;;
     "20200214121052" )
-        patch_name=${1:-patch_01}
+        patch_name=${1:-patch_02}
         version="2106"
         echo "Version 2.1.0.6"
         ;;

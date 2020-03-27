@@ -1,6 +1,6 @@
 # Binary patches for the rM
 
-## Versions 1.8.1.1-2.1.0.6
+## Versions 1.8.1.1-2.1.1.3
 Those are features that I find useful/wanted for me to have. If someone else would like to try them, they are welcome.
 
 
@@ -18,6 +18,7 @@ There may be bugs, you may lose data, your device may crash, etc.*
 ![Screenshot1](docs/images/screenshot_recent_files.png)
 
 ## Changes
+- [2.1.1.3](patches/2113/readme.md)
 - [2.1.0.6](patches/2106/readme.md)
 - [2.0.2.0](patches/2020/readme.md)
 - [2.0.1.1](patches/2011/readme.md)

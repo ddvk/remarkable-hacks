@@ -5,5 +5,9 @@
 - swipe down, toggles the menu
 - in recent files, long press on a deleted file to restore it (if not purged yet)
 
+### patch_02
+- close button
+- disable sleep when plugged
+
 ### Notes / Known issues
 - recent files shows deleted files as well

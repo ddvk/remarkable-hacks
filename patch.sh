@@ -59,7 +59,7 @@ function auto_install(){
 
 case $(</etc/version) in
     "20200320131825" )
-        patch_name=${1:-patch_02}
+        patch_name=${1:-patch_03}
         version="2113"
         echo "Version 2.1.1.3"
         ;;

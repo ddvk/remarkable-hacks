@@ -10,9 +10,9 @@ function checkspace(){
     fi;
 }
 
-checkspace || (echo "Will try to free some"; journalctl --vacuum-time=1m)
-checkspace || (echo "Aborting"; exit 10)
-echo "Disk space seems to be enough"
+checkspace || (echo "Trying to free space..."; journalctl --vacuum-time=1m)
+checkspace || (echo "Aborting..."; exit 10)
+echo "Disk space seems to be enough."
 
 trap onexit INT
 
@@ -23,7 +23,7 @@ function onexit(){
     exit 0
 }
 function cleanup(){
-    echo "cleaning up"
+    echo "Cleaning up..."
     rm /tmp/*crash* 2> /dev/null || true
     rm -fr .cache/remarkable/xochitl/qmlcache/*
 }
@@ -37,19 +37,19 @@ function rollback(){
 }
 
 function auto_install(){
-    echo -n "If everything worked, do you want to make it permanent [N/y]?"
+    echo -n "If everything worked, do you want to make it permanent [N/y]? "
     read yn
     case $yn in 
         [Yy]* ) 
-            echo "Making it permanent"
+            echo "Making it permanent..."
             mv $binary_name.patched /usr/bin/$binary_name
-            echo "Starting the UI"
+            echo "Starting the UI..."
             systemctl start xochitl
             return 0
             ;;
         * )
             rm $binary_name.patched
-            echo "Staring the original"
+            echo "Starting the original..."
             systemctl start xochitl
             ;;
     esac
@@ -121,7 +121,7 @@ systemctl stop xochitl
 systemctl stop remarkable-fail
  
 cleanup
-echo "Trying to start the patched version"
-echo "You can play around, press CTRL-C when done"
+echo "Trying to start the patched version..."
+echo "You can play around, press CTRL-C when done."
 QT_LOGGING_RULES=*=false ./xochitl.patched  || echo "It crashed?"
 cleanup

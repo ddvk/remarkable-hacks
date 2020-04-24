@@ -19,9 +19,7 @@ There may be bugs, you may lose data, your device may crash, etc.*
 
 ## Changes
 - [2.1.1.3](patches/2113/readme.md)
-- [2.1.0.6](patches/2106/readme.md)
 - [2.0.2.0](patches/2020/readme.md)
-- [2.0.1.1](patches/2011/readme.md)
 - [1.8.1.1](patches/1811/readme.md)
 
 ## Known issues

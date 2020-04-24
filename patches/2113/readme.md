@@ -1,3 +1,9 @@
+### patch_04
+zen mode
+- swap left/right in zen mode for left-handers
+- long press (left or right): undo
+- append the patch version to the official one
+
 ### patch_03
 - add additional keyboards (german, cyrillic) and button to toggle the keyboards
 - reading mode ( press home+right button, right+left to exit)
@@ -5,7 +11,7 @@
     - tap left / right to change pages
 
 ### patch_02
-- close button
+- add close button
 - disable sleep when plugged
 
 ### patch_01

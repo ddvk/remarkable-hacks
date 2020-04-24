@@ -48,7 +48,7 @@ function auto_install(){
             return 0
             ;;
         * )
-            rm $binary_name.patched
+            echo "Use the xochitl.patched binary if you change your mind / provide it if it segfaulted."
             echo "Starting the original..."
             systemctl start xochitl
             ;;

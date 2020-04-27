@@ -44,15 +44,6 @@ There may be bugs, you may lose data, your device may crash, etc.*
 - had to remove the tooltips / tutorial
 - dialog for filename / mesage body no longer scrollable
 
-## Nice to have
-- change the default tool on document create (i prefer the fineliner, thickness 1)
-- fix the selection box dimensions (vertical or horizonatl straight lines are hard to manage)
-- fix palm rejection timeout (cannot swipe pages, button input ignored, for 1-2 seconds after raising the pen)
-
-## Things that I would like to do, but are hard
-- pdf link navigation
-- djvu support
-
 # Installation
 on the device (Rm->About->Copyright->General Information) write down, remember the password shown
 

@@ -1,3 +1,6 @@
+### patch_05
+- remember the last tool used (use when creating new notebooks)
+
 ### patch_04
 zen mode
 - swap left/right in zen mode for left-handers

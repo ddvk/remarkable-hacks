@@ -1,5 +1,6 @@
-### patch_05
+### patch_05_1
 - remember the last tool used (use when creating new notebooks)
+- remember thickness
 
 ### patch_04
 zen mode

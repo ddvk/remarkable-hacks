@@ -10,6 +10,8 @@ There may be bugs, you may lose data, your device may crash, etc.*
 
 *The only guarantee is, that there is no ill intended code*
 
+I am not affiliated with reMarkable AS in anyway
+
 ## Demo
 
 ![Screenshot1](docs/images/screenshot_2020_bookmarks.png)
@@ -105,3 +107,14 @@ rm -fr .cache/remarkable/xochitl/qmlcache/*
 cp xochitl.version /usr/bin/xochitl #where version is the current device version
 systemctl start xochitl
 ```
+
+
+## FAQ
+
+== How do you make the patches? ==
+
+I wrote some tools, I change the code, I patch
+
+== Why is this not open source? ==
+
+I don't own the source, the legality is dubious, not in reMarkable SA's best interest due to various reasons, etc

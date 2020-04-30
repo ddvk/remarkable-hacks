@@ -41,7 +41,7 @@ function auto_install(){
     read yn
     case $yn in 
         [Yy]* ) 
-            echo "Making it permanent..."
+            echo "Making it permanent, DON'T DELETE $backup_file"
             mv $binary_name.patched /usr/bin/$binary_name
             echo "Starting the UI..."
             systemctl start xochitl
@@ -61,32 +61,20 @@ case $(</etc/version) in
     "20200320131825" )
         patch_name=${1:-patch_05}
         version="2113"
+        expectedhash="c8661fbd74a049134509dc22da415bb651d7feac"
         echo "Version 2.1.1.3 - $patch_name"
-        ;;
-    "20200306163413" )
-        patch_name=${1:-patch_01}
-        version="2110"
-        echo "Version 2.1.1.0"
-        ;;
-    "20200214121052" )
-        patch_name=${1:-patch_02}
-        version="2106"
-        echo "Version 2.1.0.6"
         ;;
     "20191204111121" )
         patch_name=${1:-patch_224}
         version="2020"
+        expectedhash="don't remember"
         echo "Version 2.0.2.0"
-        ;;
-    "20191123105338" )
-        patch_name=${1:-patch_204}
-        version="2011"
-        echo "Version 2.0.1.1"
         ;;
         
     "20190904134033" )
         patch_name=${1:-patch_07}
         version="1811"
+        expectedhash="don't remember"
         echo "Version 1.8.1.1"
         ;;
     * )
@@ -107,10 +95,18 @@ if [ -z "$SKIP_DOWNLOAD" ]; then
     wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$version/$patch_name" -O $patch_name || exit 1
 fi
 
-#make sure we keep the original
+#make sure we keep the original, which is needed for additional patching or rollback
 if [ ! -f $backup_file ]; then
     cp /usr/bin/$binary_name $backup_file
 fi
+
+hash=$(sha1sum $backup_file | cut -c 1-40)
+if [ "$expectedhash" != "$hash" ]; then
+    echo "The backup $backup_file is not the original file (was it replaced/ deleted?), cowardly aborting..."
+    exit 1
+fi
+
+
 cp $backup_file $binary_name
 
 bspatch $binary_name $binary_name.patched $patch_name

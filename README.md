@@ -111,10 +111,8 @@ systemctl start xochitl
 
 ## FAQ
 
-== How do you make the patches? ==
-
+#### How do you make the patches?
 I wrote some tools, I change the code, I patch
 
-== Why is this not open source? ==
-
+#### Why is this not open source?
 I don't own the source, the legality is dubious, not in reMarkable SA's best interest due to various reasons, etc

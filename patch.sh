@@ -56,7 +56,6 @@ function auto_install(){
     return 1
 }
 
-
 case $(</etc/version) in
     "20200320131825" )
         patch_name=${1:-patch_05_2}

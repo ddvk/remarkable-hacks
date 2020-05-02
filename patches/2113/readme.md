@@ -1,3 +1,6 @@
+### patch_05_2
+- fix: reading mode for left handed
+
 ### patch_05_1
 - remember the last tool used (use when creating new notebooks)
 - remember thickness

@@ -1,3 +1,6 @@
+### patch_05_3
+- shortcut: 2 finger swipe up to close the document
+
 ### patch_05_2
 - fix: reading mode for left handed
 

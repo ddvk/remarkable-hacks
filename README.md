@@ -26,9 +26,10 @@ I am not affiliated with reMarkable AS in anyway
 
 
 ## Quick Doc
+- bookmark pages by clicking the upper right (or left for lefthanders) corner
+- long press on a bookmark or upper left/right corner to edit it
 - some menus to toggle swipes and bookmarks are in the "Share Menu" (rectangle with an arrow pointing out)
 - there is an exit button in the "Document Menu" (bottommost)
-- long press on a bookmark or upper left/right corner to edit it
 - left & right button simultaneously to toggle zen mode
 - long press on the "toggle menu" (uppermost) to toggle zen mode
     zen mode:

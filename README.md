@@ -28,23 +28,20 @@ I am not affiliated with reMarkable AS in anyway
 ## Quick Doc
 - some menus to toggle swipes and bookmarks are in the "Share Menu" (rectangle with an arrow pointing out)
 - there is an exit button in the "Document Menu" (bottommost)
-- long press on a bookmark or upper corent to edit it
+- long press on a bookmark or upper left/right corner to edit it
 - left & right button simultaneously to toggle zen mode
 - long press on the "toggle menu" (uppermost) to toggle zen mode
     zen mode:
         - left/right toggles pen/eraser
         - left/right long press to undo
-- home  & right button simultaneously to enter reading mode (use the shortcut for zen mode)
+- home & right button simultaneously to enter reading mode (use the shortcut for zen mode)
 - swipe down to toggle the menu
 - long press home button to show Recent Files
 - long press on a recent file that was deleted but not synced to restore it
+- 2 finger swipe up to close the document
 
 ## Known issues
-- bookmark position stays the same in landscape mode
-- numpad does not validate the input (0 = first page, > pagecount = last page)
-- listview scrolling is buggy
 - had to remove the tooltips / tutorial
-- dialog for filename / mesage body no longer scrollable
 
 # Installation
 on the device (Rm->About->Copyright->General Information) write down, remember the password shown

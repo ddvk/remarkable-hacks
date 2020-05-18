@@ -51,7 +51,6 @@ on the device (Rm->About->Copyright->General Information) write down, remember t
 ## Linux
 You got this
 
-
 ## Windows 10
 open a command line prompt (Win-R, type cmd, enter)
 ssh root@10.11.99.1 (type the password)
@@ -107,6 +106,89 @@ systemctl start xochitl
 ```
 
 
+# Features compiled by u/TheTomatoes2
+
+reMarkable Hack brings extra and useful features to your rM. It is regularly updated and improved (most recent patch).
+
+This file details all additional features and modifications included in the latest patch.
+
+The best features are marked as **[BEST]**.
+
+
+## Tools (in the side-menu, listed top-down)
+ - Additional writing tools: Pencil v1 & Paintbrush v1
+ - GoToPage: Indicates the page count and opens a number pad that allows 
+   navigating to the corresponding page
+ - Bookmarks List tool: opens the list of bookmarks. Click to jump to 
+   bookmarked page, long-press to edit bookmark (see Bookmark tool 
+   below)
+
+ - Navigator: Quickly navigate between pages accessed through GoToPage
+ - [BEST] In PDFs: Table of Content
+ - Additional options in Shortcut menu: Disable WiFI, Disable Swipes, 
+   Disable Bookmark button
+ - Layer visibility: Click to hide all but 1 layer, click again to cycle 
+   through layers
+ - Recent files: get a list of recently opened files to quickly switch 
+   to them
+
+## **[BEST]** Bookmarks
+- To bookmark a page, click the upper right corner
+- To edit the bookmark name, long-press the upper right corner
+- To see the Bookmarks Lists, click the icon (see Tools above)
+You can rename bookmarks by long-pressing them.
+
+
+## **[BEST]** Modes
+
+### In all modes 
+
+#### Swipes and Buttons
+ - **[BEST]** Swipe down to toggle side-menu
+ - Click upper right corner to bookmark current page.
+ - Long-press upper right corner to rename bookmark of current page.
+ - **[BEST]** Long-press middle button to open Recent files list
+
+### In Normal (default) Mode
+
+#### Swipes and Buttons
+ - Long-press left/right button to go to 1st/Last page
+
+
+### **[BEST]** In Zen Mode
+
+To toggle Zen Mode: long-press menu icon *or* long-press Left+Right buttons.
+
+#### Swipes and Buttons
+
+- **[BEST]** Press left (right if left-handed) button to cycle between Writing and Eraser tool
+- Long-press left (right if left-handed) button to Undo
+
+ NOTE: use swipes to move between pages
+#### UI
+- Menu icon is replaced by the icon of the current tool and the thickness (number)
+
+### In Reading Mode
+To enter Reading Mode: Center+Right buttons
+
+To exit:               Left+Right buttons
+
+NOTE: inverted for left-handers
+
+#### Swipes and Buttons
+- Tap left or right to change page (in addition to swiping)
+
+#### UI
+- Menu icon is hidden (use the swipe down gesture to open it)
+
+## Other
+- **[BEST]** When a new notebook is created, the last used writing tool and its thickness are pre-selected.
+ - Keyboards layout: EN, RU, NO, DE
+ - Sleep disabled when rM plugged in
+- **[BEST]** Restore recently deleted files by long-pressing them in the Recent Files list
+- On the homescreen: open the side-menu to see Recent Files list.
+
+
 ## FAQ
 
 #### How do you make the patches?
@@ -114,3 +196,6 @@ I wrote some tools, I change the code, I patch
 
 #### Why is this not open source?
 I don't own the source, the legality is dubious, not in reMarkable SA's best interest due to various reasons, etc
+
+#### Can you add this or that feature?
+Some things are hard, very time consuming or even impossible for my skill level. I prefer to take a more pragmatic approach and add things that are easy, but from which most users can benefit.

@@ -1,3 +1,7 @@
+### patch_05_5
+- remember eraser for new notebooks
+- shortcut: 2 finger swipe down to switch to the previous document
+
 ### patch_05_4
 - shortcut: 2 finger swipe up to close the document
 

@@ -1,3 +1,6 @@
+### patch_05_6
+- fix gestures / landscape
+
 ### patch_05_5
 - remember eraser for new notebooks
 - shortcut: 2 finger swipe down to switch to the previous document

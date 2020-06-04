@@ -1,4 +1,4 @@
-### patch_05_6
+### patch_05_8
 - convert text on imported documents (pdf)
 - extract (move out) pages from documents
 

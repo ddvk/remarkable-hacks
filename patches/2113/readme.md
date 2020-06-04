@@ -1,4 +1,8 @@
 ### patch_05_6
+- convert text on imported documents (pdf)
+- extract (move out) pages from documents
+
+### patch_05_6
 - fix gestures / landscape
 
 ### patch_05_5

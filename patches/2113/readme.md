@@ -1,3 +1,7 @@
+### patch_06
+- toggle show page numbers when menu hidden
+- disable bookmarks in zen mode
+
 ### patch_05_8
 - convert text on imported documents (pdf)
 - extract (move out) pages from documents

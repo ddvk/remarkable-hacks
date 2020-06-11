@@ -118,5 +118,5 @@ systemctl stop remarkable-fail
 cleanup
 echo "Trying to start the patched version..."
 echo "You can play around, press CTRL-C when done."
-QT_LOGGING_RULES=*=false ./xochitl.patched  || echo "It crashed?"
+QT_LOGGING_RULES=*=false ./xochitl.patched -plugin evdevlamy  || echo "It crashed?"
 cleanup

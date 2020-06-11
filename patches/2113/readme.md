@@ -1,5 +1,5 @@
 ### patch_07
-- pens with buttons, hold to erase or toggle
+- pens with buttons, hold to erase or toggle (with the additional plugin)
 
 ### patch_06
 - toggle show page numbers when menu hidden

@@ -1,3 +1,6 @@
+### patch_07
+- pens with buttons, hold to erase or toggle
+
 ### patch_06
 - toggle show page numbers when menu hidden
 - disable bookmarks in zen mode

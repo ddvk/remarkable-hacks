@@ -66,6 +66,12 @@ function auto_install(){
 }
 
 case $(</etc/version) in
+    "20200528081414" )
+        patch_name=${1:-patch_01}
+        version="22048"
+        expectedhash="7e92c177df685972a699db6c4a7a918296447f74"
+        echo "Version 2.2.0.48 - $patch_name"
+        ;;
     "20200320131825" )
         patch_name=${1:-patch_08}
         version="2113"

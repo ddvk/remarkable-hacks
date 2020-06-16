@@ -1,3 +1,7 @@
+### patch_08
+- fix landscape, bookmarks and recent files
+- add page offset setting (0 Page)
+
 ### patch_07
 - pens with buttons, hold to erase or toggle (with the additional plugin)
 

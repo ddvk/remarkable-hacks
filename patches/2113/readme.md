@@ -1,3 +1,7 @@
+### patch_09
+- add comma, keyboard layout
+- changed page 0 to page 1
+
 ### patch_08
 - fix landscape, bookmarks and recent files
 - add page offset setting (0 Page)

@@ -28,7 +28,7 @@ I am not affiliated with reMarkable AS in anyway
 
 ## Quick Doc
 - bookmark pages by clicking the upper right (or left for lefthanders) corner
-- long press on a bookmark or upper left/right corner to edit it
+- long press on a bookmark or upper left/right corner (touch not pen) to edit it
 - some menus to toggle swipes and bookmarks are in the "Share Menu" (rectangle with an arrow pointing out)
 - there is an exit button in the "Document Menu" (bottommost)
 - left & right button simultaneously to toggle zen mode
@@ -134,8 +134,8 @@ The best features are marked as **[BEST]**.
    to them
 
 ## **[BEST]** Bookmarks
-- To bookmark a page, click the upper right corner
-- To edit the bookmark name, long-press the upper right corner
+- To bookmark a page, click the upper right corner (touch not pen)
+- To edit the bookmark name, long-press the upper right corner (touch not pen)
 - To see the Bookmarks Lists, click the icon (see Tools above)
 You can rename bookmarks by long-pressing them.
 

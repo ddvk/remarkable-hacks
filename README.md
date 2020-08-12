@@ -80,6 +80,13 @@ patches are cumulative (the last one contains all previous changes and gets upda
 a patch can be applied more than once, it's more of a snapshot really, you can go back to a previous version
 
 
+# Timezones
+`timedatectl set-timezone "Europe/Paris"`
+
+The device doesn't have all timezones. In order for it to show local time, copy the missing time zone to `/usr/share/zoneinfo/` then execute the above command.
+
+
+
 # NB WARNING
 Always clear the qml cache before switching/running versions manually (the script already does that). Failing to do so will result in a crash
 

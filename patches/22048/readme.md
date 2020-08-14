@@ -1,5 +1,8 @@
+### patch_10.05
+- enable selection while zoomed (copy/paste is buggy, ymmv)
+
 ### patch_10.04
-- add current time (the timezone has to be set in order to have local time e.g `timdatectl set-timezone somezone` )
+- add current time (the timezone has to be set in order to have local time e.g `timedatectl set-timezone somezone` )
 - enable bookmarks in zen mode
 - page offset logic changed (Enter the page number you see to calculate the offset)
 - add option to disable buttons (Enables swipes if disabled)

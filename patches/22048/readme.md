@@ -1,3 +1,5 @@
+### patch_10.06
+- diable buttons (enable lamy)
 ### patch_10.05
 - enable selection while zoomed (copy/paste is buggy, ymmv)
 

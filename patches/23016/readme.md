@@ -1,3 +1,6 @@
+# patch_12.06
+- add version 
+
 # patch_12.05
 - 
 # patch_12.04

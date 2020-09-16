@@ -157,6 +157,7 @@ You can rename bookmarks by long-pressing them.
  - Click upper right corner to bookmark current page.
  - Long-press upper right corner to rename bookmark of current page.
  - **[BEST]** Long-press middle button to open Recent files list
+ - 2 finger swipe down to switch to the previous document
 
 ### In Normal (default) Mode
 

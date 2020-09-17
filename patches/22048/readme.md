@@ -1,3 +1,6 @@
+### patch_10.07
+- pinch to zoom / hide clock on long press 
+
 ### patch_10.06
 - diable buttons (enable lamy)
 ### patch_10.05

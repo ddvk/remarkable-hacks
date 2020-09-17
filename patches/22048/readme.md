@@ -1,3 +1,6 @@
+### patch_10.08
+- zoomed in swipe to move 
+
 ### patch_10.07
 - pinch to zoom / hide clock on long press 
 

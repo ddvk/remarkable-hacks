@@ -67,7 +67,7 @@ function auto_install(){
 
 case $(</etc/version) in
     "20200904144143" )
-        patch_name=${1:-patch_13.05}
+        patch_name=${1:-patch_13.06}
         version="23023"
         expectedhash="7eb1ed8b75b1b282fd4ecf30ef19118d3a41fcc7"
         echo "rM2 Version 2.3.0.23 - $patch_name"

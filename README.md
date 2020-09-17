@@ -44,6 +44,11 @@ I am not affiliated with reMarkable AS in anyway
 - long press home button to show Recent Files
 - long press on a recent file that was deleted but not synced to restore it
 - 2 finger swipe up to close the document
+- pinch to zoom in/out
+
+## Extras
+- email and hwr for scribbles on pdfs
+- extract scribbles from pdfs into new notebook
 
 ## Known issues
 - had to remove the tooltips / tutorial
@@ -88,6 +93,14 @@ a patch can be applied more than once, it's more of a snapshot really, you can g
 
 The device doesn't have all timezones. In order for it to show local time, copy the missing time zone to `/usr/share/zoneinfo/` then execute the above command.
 
+# Extra fonts (e.g Japanese)
+The rootfs doesn't have enough space, so you can do  
+```
+mv /usr/share/fonts/ttf ~/ttf
+ln -sf /home/root/ttf /usr/share/fonts/ttf
+```
+for japanese: HanaMinA.ttf and HanaMinB.ttf seem ok  
+put new fonts in `/home/root/ttf`,  do `fc-cache` and restart xochitl
 
 
 # NB WARNING
@@ -112,7 +125,7 @@ ssh
 ```
 systemctl stop xochitl
 rm -fr .cache/remarkable/xochitl/qmlcache/*
-cp xochitl.version /usr/bin/xochitl #where version is the current device version
+cp /home/rmhacks/xochitl.version /usr/bin/xochitl #where version is the current device version
 systemctl start xochitl
 ```
 

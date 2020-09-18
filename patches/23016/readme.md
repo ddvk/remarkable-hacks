@@ -1,5 +1,3 @@
-### patch_12.08
-- toggle pinchzoom
 ### patch_12.07
 - move zoom
 ### patch_12.06

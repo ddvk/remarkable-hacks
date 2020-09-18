@@ -1,6 +1,8 @@
+### patch_13.07
+- zoom toggle 
+
 ### patch_13.06
 - hide clock 
- 
 
 ### patch_13.05
 - move zoom

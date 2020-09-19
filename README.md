@@ -89,12 +89,14 @@ a patch can be applied more than once, it's more of a snapshot really, you can g
 
 
 # Timezones
-Check the list of timezones in [Timezones](docs/timezones.md)
+The time is in UTC. In order to have the right time, the right timezone should be set (which has things like Daylight Saving Time, utc offsets etc).
+
+Check the list of timezones in [Timezones](docs/timezones.md)  
 To set a timezone, run this on the device, by setting one that matches your location e.g.  
 `timedatectl set-timezone "Europe/Paris"` or  
 `timedatectl set-timezone "America/Denver"`
 
-The device doesn't have all timezones. If yours is missing from the list, find a linux distro and copy the missing time zone to `/usr/share/zoneinfo/` then execute the above command with the new zone.
+The device doesn't have all possible timezones. If yours is missing from the list, find a linux distro and copy the missing time zone to `/usr/share/zoneinfo/` then execute the above command with the new zone.
 
 # Extra fonts (e.g Japanese)
 The rootfs doesn't have enough space, so you can do  

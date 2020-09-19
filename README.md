@@ -89,9 +89,12 @@ a patch can be applied more than once, it's more of a snapshot really, you can g
 
 
 # Timezones
-`timedatectl set-timezone "Europe/Paris"`
+Check the list of timezones in [Timezones](docs/timezones.md)
+To set a timezone, run this on the device, by setting one that matches your location e.g.  
+`timedatectl set-timezone "Europe/Paris"` or  
+`timedatectl set-timezone "America/Denver"`
 
-The device doesn't have all timezones. In order for it to show local time, copy the missing time zone to `/usr/share/zoneinfo/` then execute the above command.
+The device doesn't have all timezones. If yours is missing from the list, find a linux distro and copy the missing time zone to `/usr/share/zoneinfo/` then execute the above command with the new zone.
 
 # Extra fonts (e.g Japanese)
 The rootfs doesn't have enough space, so you can do  

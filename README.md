@@ -40,6 +40,7 @@ I am not affiliated with reMarkable AS in anyway
         - left/right toggles pen/eraser
         - left/right long press to undo
 - home & right button simultaneously to enter reading mode (use the shortcut for zen mode)
+    - tap left/right to change panges
 - swipe down to toggle the menu
 - long press home button to show Recent Files
 - long press on a recent file that was deleted but not synced to restore it
@@ -49,6 +50,7 @@ I am not affiliated with reMarkable AS in anyway
 ## Extras
 - email and hwr for scribbles on pdfs
 - extract scribbles from pdfs into new notebook
+- clock (check the Timezones)
 
 ## Known issues
 - had to remove the tooltips / tutorial
@@ -83,12 +85,12 @@ sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/pat
 ```
 The app should start, play with it, but press **CTRL-C** to stop it when done (DON'T LEAVE IT JUST RUNNING) and follow the instructions (i.e make it permanent or just start the stock one). 
 
-### Notes
+# Notes
 patches are cumulative (the last one contains all previous changes and gets updated with bugfixes)
 a patch can be applied more than once, it's more of a snapshot really, you can go back to a previous version
 
 
-# Timezones
+## Timezones
 The time is in UTC. In order to have the right time, the right timezone should be set (which has things like Daylight Saving Time, utc offsets etc).
 
 Check the list of timezones in [Timezones](docs/timezones.md)  
@@ -98,7 +100,7 @@ To set a timezone, run this on the device, by setting one that matches your loca
 
 The device doesn't have all possible timezones. If yours is missing from the list, find a linux distro and copy the missing time zone to `/usr/share/zoneinfo/` then execute the above command with the new zone.
 
-# Extra fonts (e.g Japanese)
+## Extra fonts (e.g Japanese)
 The rootfs doesn't have enough space, so you can do  
 ```
 mv /usr/share/fonts/ttf ~/ttf
@@ -108,22 +110,8 @@ for japanese: HanaMinA.ttf and HanaMinB.ttf seem ok
 put new fonts in `/home/root/ttf`,  do `fc-cache` and restart xochitl
 
 
-# NB WARNING
-Always clear the qml cache before switching/running versions manually (the script already does that). Failing to do so will result in a crash
-
-don't delete the `xochitl.2113` or similar files depending on the version (I know root not the best place) as this is the original binary
-
 ## Making it permanent
-
-After making sure everything is ok (i.e. no crashes) if you want to make it permanent (until the next sw update), you can replace the original, before running the original or rebooting (make sure you read the WARNING above)
-```
-#if you ran a different version
-rm -fr .cache/remarkable/xochitl/qmlcache/*
-
-cp xochitl.patched /usr/bin/xochitl
-systemctl start xochitl
-```
-
+You should have typed 'Y' when asked
 
 ## Revert in case things go terribly wrong
 ssh

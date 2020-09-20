@@ -1,5 +1,6 @@
 ### patch_13.07
 - zoom toggle 
+- 2 finders swip up for recent files
 
 ### patch_13.06
 - hide clock 

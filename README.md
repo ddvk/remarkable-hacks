@@ -44,7 +44,7 @@ I am not affiliated with reMarkable AS in anyway
 - swipe down to toggle the menu
 - long press home button to show Recent Files
 - long press on a recent file that was deleted but not synced to restore it
-- 2 finger swipe up to close the document
+- 2 finger swipe up for recent files
 - pinch to zoom in/out
 
 ## Extras

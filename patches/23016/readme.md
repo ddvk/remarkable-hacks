@@ -1,3 +1,5 @@
+### patch_12.09
+- pinch optimization 
 ### patch_12.08
 - port zoom patches
 ### patch_12.07

@@ -73,7 +73,7 @@ case $(</etc/version) in
         echo "rM2 Version 2.3.0.23 - $patch_name"
         ;;
     "20200709160645" )
-        patch_name=${1:-patch_12.08}
+        patch_name=${1:-patch_12.09}
         version="23016"
         expectedhash="005b05ef64f079aaf377d373cb7e2889a2aa774a"
         echo "rM1 Version 2.3.0.16 - $patch_name"

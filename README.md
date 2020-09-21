@@ -56,7 +56,13 @@ I am not affiliated with reMarkable AS in anyway
 - had to remove the tooltips / tutorial
 
 # Installation
-on the device (Rm->About->Copyright->General Information) *write down, remember the password shown*
+Find the ssh password (**write it down and keep it safe**)  
+
+in the newest version:
+    Settings->Help->Copyright and Licenses (under GPLv3 Compliance)
+versions < 2.3:
+    Settings->About->Copyright->General Information
+
 
 **It is really important to have the password somewhere, in case something goes wrong**
 

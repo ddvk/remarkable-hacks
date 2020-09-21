@@ -56,7 +56,9 @@ I am not affiliated with reMarkable AS in anyway
 - had to remove the tooltips / tutorial
 
 # Installation
-on the device (Rm->About->Copyright->General Information) write down, remember the password shown
+on the device (Rm->About->Copyright->General Information) *write down, remember the password shown*
+
+**It is really important to have the password somewhere, in case something goes wrong**
 
 
 ## Linux

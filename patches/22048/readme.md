@@ -1,3 +1,5 @@
+### patch_10.10
+- toggle last 2 pens in zen
 ### patch_10.09
 - add switch for pinch zoom / fix landscape
 ### patch_10.08

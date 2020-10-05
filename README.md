@@ -5,7 +5,7 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 
 ## Disclaimer
-*The files are offered without any warranty and you will be violating the reMarkable SA EULA by using them.
+*The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.
 There may be bugs, you may lose data, your device may crash, etc.*
 
 *The only guarantee is, that there is no ill intended code*
@@ -222,7 +222,7 @@ NOTE: inverted for left-handers
 I wrote some tools, I change the code, I patch
 
 #### Why is this not open source?
-I don't own the source, the legality is dubious, not in reMarkable SA's best interest due to various reasons, etc
+I don't own the source, the legality is dubious, not in reMarkable AS's best interest due to various reasons, etc
 
 #### Can you add this or that feature?
 Some things are hard, very time consuming or even impossible for my skill level. I prefer to take a more pragmatic approach and add things that are easy, but from which most users can benefit.

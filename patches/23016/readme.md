@@ -1,3 +1,6 @@
+### patch_12.11
+- share menu for epub
+- fix nan in bookmarks
 ### patch_12.10
 - fix button rejection
 - right/left toggle last 2 used tools in zen mode

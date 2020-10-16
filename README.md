@@ -68,6 +68,7 @@ versions < 2.3:
 **It is really important to have the password somewhere, in case something goes wrong**
 
 
+
 ## Linux
 You got this
 
@@ -83,7 +84,10 @@ ssh root@10.11.99.1 (type the password)
 paste the automagic line
 
 # Automagic
-paste the following and press enter:
+
+**Make sure the device has Internet connectivity i.e. Wifi is ON and connected**
+
+Paste the following and press enter:
 ```
 sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" 
 ```
@@ -92,7 +96,11 @@ to try a different patch:
 ```
 sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" _ patch_xxx 
 ```
-The app should start, play with it, but press **CTRL-C** to stop it when done (DON'T LEAVE IT JUST RUNNING) and follow the instructions (i.e make it permanent or just start the stock one). 
+where xxx is the patch number
+
+The app should start, play with it, but press **CTRL-C** (Hold the Control key and press C) to stop it when done **DON'T LEAVE IT JUST RUNNING** and follow the instructions after pressing CTRL-C
+
+**Should Press 'Y' and then Enter when asked to make it permanent**
 
 # Notes
 patches are cumulative (the last one contains all previous changes and gets updated with bugfixes)

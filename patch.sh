@@ -65,8 +65,9 @@ function auto_install(){
     return 1
 }
 
-case $(</etc/version) in
-    "20200914085553" )
+currentVersion="$(</etc/version)"
+case $currentVersion in
+    "20200914085553" | "20200914090635" )
         patch_name=${1:-patch_14.01}
         version="23127"
         expectedhash="596b02f401fb0ceb6a73df470fbab418b305cdbc"
@@ -108,7 +109,6 @@ case $(</etc/version) in
         expectedhash="don't remember"
         echo "Version 2.0.2.0"
         ;;
-        
     "20190904134033" )
         patch_name=${1:-patch_07}
         version="1811"
@@ -116,7 +116,7 @@ case $(</etc/version) in
         echo "Version 1.8.1.1"
         ;;
     * )
-        echo "The version the device is running is not supported, yet"
+        echo "The version the device is running is not supported, yet. $currentVersion"
         exit 1
         ;;
 esac

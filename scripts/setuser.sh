@@ -1,4 +1,6 @@
 #!/bin/sh
+# USE AT YOUR OWN RISK
+# Backup your file first
 # a simple script to switch the xochitls folders per user
 # Usage: ./setuser.sh user1
 # if the folder does not exists it will be created

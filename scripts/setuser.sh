@@ -1,6 +1,6 @@
 #!/bin/sh
 # USE AT YOUR OWN RISK
-# Backup your file first
+# Backup your files first
 # a simple script to switch the xochitls folders per user
 # Usage: ./setuser.sh user1
 # if the folder does not exists it will be created
@@ -15,7 +15,7 @@ function linkfolder() {
     newhome=/home/$1
     origin=/home/root/$2
     if [ -L $origin ]; then
-        echo "Link exists"
+        echo "Link exists for $origin"
         if [ ! -d $newhome/$loc ]; then
             echo "Creating folder $newhome/$log"
             mkdir -p $newhome/$loc
@@ -24,10 +24,10 @@ function linkfolder() {
         ln -sf $newhome/$loc /home/root/
     elif [ -d $origin ]; then
         if [ -d $newhome/$loc ]; then
-            echo "Default $origin not a link, and folder for user $1 exists, deleted it first"
+            echo "Default $origin not a link, and folder for user $1 exists, delete it first"
             exit 1
         else
-            echo "Moving cfg folders and creating links..."
+            echo "Moving $loc and creating link..."
             mkdir -p $newhome
             mv $origin $newhome
             ln -sf $newhome/$loc /home/root/

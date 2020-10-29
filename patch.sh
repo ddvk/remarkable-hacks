@@ -74,7 +74,7 @@ case $currentVersion in
     #     echo "rM2 Version 2.4.0.27 - $patch_name"
     #     ;;
     "20201016123325" )
-        patch_name=${1:-patch_15.1.01}
+        patch_name=${1:-patch_15.1.02}
         version="24027_rm1"
         expectedhash="891e06535c0ae742eeaa3b9a20e9ff03d0f659d3"
         echo "rM1 Version 2.4.0.27 - $patch_name"

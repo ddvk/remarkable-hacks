@@ -69,7 +69,7 @@ currentVersion="$(</etc/version)"
 case $currentVersion in
     "20201028164335" )
         patch_name=${1:-patch_16.1.01}
-        version="24130_rm2"
+        version="24130_rm1"
         expectedhash="336529ce6e7ef9d6fadd30872708556ca8711f0b"
         echo "rM1 Version 2.4.1.30 - $patch_name"
         ;;

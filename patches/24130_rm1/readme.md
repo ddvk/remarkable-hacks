@@ -1,3 +1,6 @@
+### patch_16.1.03
+- fix toc
+- toggle for always first page for navigator thumbnails 
 ### patch_16.1.02
 - hide battery toggle
 - show charging status

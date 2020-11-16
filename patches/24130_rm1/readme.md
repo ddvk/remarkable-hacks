@@ -1,3 +1,5 @@
+### patch_16.1.04
+- fix eraser/lasttool toggle 
 ### patch_16.1.03
 - fix toc
 - toggle for always first page for navigator thumbnails 

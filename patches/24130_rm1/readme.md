@@ -1,3 +1,8 @@
+### patch_16.1.05
+- removed lamy toggle options and set the default to:
+    hold 200ms to erase
+    double click 300ms to undo
+    click to switch last tool
 ### patch_16.1.04
 - fix eraser/lasttool toggle 
 ### patch_16.1.03

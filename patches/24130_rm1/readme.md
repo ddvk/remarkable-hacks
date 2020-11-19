@@ -1,3 +1,5 @@
+### patch_16.1.06
+- fix eraser latency (noris jumbo) needs the latest stylus patch
 ### patch_16.1.05
 - removed lamy toggle options and set the default to:
     hold 200ms to erase

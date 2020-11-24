@@ -35,22 +35,32 @@ I am not affiliated with reMarkable AS in anyway
 
 
 ## Quick Doc
-- bookmark pages by clicking the upper right (or left for lefthanders) corner
-- long press on a bookmark or upper left/right corner (touch not pen) to edit it
-- some menus to toggle swipes and bookmarks are in the "Share Menu" (rectangle with an arrow pointing out)
-- there is an exit button in the "Document Menu" (bottommost)
-- left & right button simultaneously to toggle zen mode
-- long press on the "toggle menu" (uppermost) to toggle zen mode
-    zen mode:
-        - left/right toggles pen/eraser
-        - left/right long press to undo
-- home & right button simultaneously to enter reading mode (use the shortcut for zen mode)
-    - tap left/right to change panges
-- swipe down to toggle the menu
-- long press home button to show Recent Files
-- long press on a recent file that was deleted but not synced to restore it
-- 2 finger swipe up for recent files
+
+Note: the reMarkable 2 does not have buttons
+
+#### Gestures
 - pinch to zoom in/out
+- swipe down to toggle side-menu
+- swipe down from the top edge to close document (existing rM gesture, not a hack)
+- two finger swipe down to switch to previous document
+- two finger swipe up *or* long press home button for recent files
+    - long press on a recent file that was deleted but not synced to restore it
+
+#### Bookmarks
+- tap upper right (or left for lefthanders) corner to bookmark a page
+- long press on bookmark to edit its description (also works in bookmark list in side-menu)
+
+#### Zen Mode
+- Enter/Exit: left & right buttons simultaneously *or* long press on the "toggle menu" (uppermost)
+- Gestures
+    - left *or* right button toggles pen/eraser
+    - long press left *or* right button to undo
+
+#### Reading Mode
+- Enter: home & right buttons simultaneously *or* tap M in the side-menu "Document Menu" (bottommost)
+- Exit: left & right buttons simultaneously *or* open side-menu and long press on the "toggle menu" (uppermost)
+- Gestures:
+    - tap left or right side of screen to change pages
 
 ## Extras
 - email and hwr for scribbles on pdfs

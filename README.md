@@ -52,9 +52,11 @@ Note: the reMarkable 2 does not have buttons
 
 #### Zen Mode
 - Enter/Exit: left & right buttons simultaneously *or* long press on the "toggle menu" (uppermost)
-- Gestures
-    - left *or* right button toggles pen/eraser
-    - long press left *or* right button to undo
+- Gestures (swipe gestures work in a small area under the "toggle menu" icon)
+    - left button (or right button for lefthanders) *or* swipe up toggles eraser
+    - right button (or left button for lefthanders) *or* swipe down toggles last tool
+    - long press left button (or right button for lefthanders) or swipe left to undo
+    - swipe right to redo
 
 #### Reading Mode
 - Enter: home & right buttons simultaneously *or* tap M in the side-menu "Document Menu" (bottommost)

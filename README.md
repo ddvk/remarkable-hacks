@@ -134,10 +134,12 @@ To set a timezone, run this on the device, by setting one that matches your loca
 The device doesn't have all possible timezones. If yours is missing from the list, find a linux distro and copy the missing time zone to `/usr/share/zoneinfo/` then execute the above command with the new zone.
 
 ## Extra fonts (e.g Japanese)
-The rootfs doesn't have enough space, so you can do  
+The rootfs doesn't have enough space, so you can do this (copy paste in the rm terminal)  
 ```
 mv /usr/share/fonts/ttf ~/ttf
 ln -sf /home/root/ttf /usr/share/fonts/ttf
+wget https://github.com/tony/dot-fonts/raw/master/Hanazono/HanaMinA.ttf -O ~/ttf/HanaMinaA.ttf
+wget https://github.com/tony/dot-fonts/raw/master/Hanazono/HanaMinB.ttf -O ~/ttf/HanaMinaB.ttf
 ```
 for japanese: HanaMinA.ttf and HanaMinB.ttf seem ok  
 put new fonts in `/home/root/ttf`,  do `fc-cache` and restart xochitl

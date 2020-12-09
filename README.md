@@ -20,6 +20,7 @@ I am not affiliated with reMarkable AS in anyway
 ![Screenshot1](docs/images/screenshot_recent_files.png)
 
 ## Changes
+- rm1 [2.5.0.27](patches/25027_rm1/readme.md)
 - rm2 [2.4.1.30](patches/24130_rm2/readme.md)
 - rm1 [2.4.1.30](patches/24130_rm1/readme.md)
 - rm2 [2.4.0.27](patches/24027_rm2/readme.md)

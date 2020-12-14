@@ -1,6 +1,6 @@
 # Binary patches for the rM
 
-## Versions 1.8.1.1-2.4.1.30
+## Versions 1.8.1.1-2.5.0.27
 Those are features that I find useful/wanted for me to have. If someone else would like to try them, they are welcome.
 
 

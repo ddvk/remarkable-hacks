@@ -1,3 +1,5 @@
+### patch_17.1.05
+- enable sleep screen transparency and reenable sleeping.png
 ### patch_17.1.04
 - swipe up in right corner cycles colors
 - bugfix: cover page

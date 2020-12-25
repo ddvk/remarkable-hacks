@@ -1,3 +1,5 @@
+### patch_17.2.04
+- sleeping, sleepscreen , transparency 
 ### patch_17.2.03
 - swipe up in right corner cycles colors
 - bugfix: cover page

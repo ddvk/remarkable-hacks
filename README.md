@@ -14,10 +14,13 @@ I am not affiliated with reMarkable AS in anyway
 
 ## Demo
 
-![Screenshot1](docs/images/screenshot_2020_bookmarks.png)
-![Screenshot1](docs/images/screenshot_2011_numpad.png)
-![Screenshot1](docs/images/screenshot_share.png)
-![Screenshot1](docs/images/screenshot_recent_files.png)
+<p align="center">
+    <img src="docs/images/screenshot_25027_bookmarks.png" alt="Screenshot with bookmarks" width="300"/>
+    <img src="docs/images/screenshot_25027_numpad.png" alt="Screenshot with numpad" width="300"/>
+    <img src="docs/images/screenshot_25027_share.png" alt="Screenshot with extended options" width="300"/>
+    <img src="docs/images/screenshot_recent_files.png" alt="Screenshot with recent files" width="300"/>
+</p>
+
 
 ## Changes
 - rm2 [2.5.0.27](patches/25027_rm2/readme.md)

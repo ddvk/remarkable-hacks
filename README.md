@@ -44,12 +44,17 @@ I am not affiliated with reMarkable AS in anyway
 Note: the reMarkable 2 does not have buttons
 
 #### Gestures
-- pinch to zoom in/out
-- swipe down to toggle side-menu
+- pinch to zoom in/out (has to be enabled first in the Share menu)
+- swipe down in the middle of the screen, to toggle side-menu
 - swipe down from the top edge to close document (existing rM gesture, not a hack)
 - two finger swipe down to switch to previous document
 - two finger swipe up *or* long press home button for recent files
     - long press on a recent file that was deleted but not synced to restore it
+- swipe up, top menu corner: switch between eraser/pen
+- swipe down, top menu corner: switch between last 2 pens
+- swipe up, top bookmark corner: cycle pen colors
+- swipe left, top middle: undo
+- swipe right, top middle: redo
 
 #### Bookmarks
 - tap upper right (or left for lefthanders) corner to bookmark a page

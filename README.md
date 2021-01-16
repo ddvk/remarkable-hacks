@@ -135,11 +135,15 @@ a patch can be applied more than once, it's more of a snapshot really, you can g
 ## Installation with oxide or draft
 The installation starts an instance of xochitl, but isn't aware of oxide or draft running, 
 which needs xochitl to be started in a different way. 
-Execute this after the installation if you've got oxide or draft running:
+Execute this before the installation if you've got oxide or draft running:
 ```shell
-systemctl stop xochitl
-systemctl restart tarnish # only if you're using oxide
-systemctl restart draft # only if you're using draft
+systemctl stop tarnish # only if you're using oxide
+systemctl stop draft # only if you're using draft
+```
+And this after the installation:
+```shell
+systemctl start tarnish # only if you're using oxide
+systemctl start draft # only if you're using draft
 ```
 If you forget to do this, you'll have two xochitls running and will see lines double.
 

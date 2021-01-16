@@ -142,6 +142,7 @@ systemctl stop draft # only if you're using draft
 ```
 And this after the installation:
 ```shell
+systemctl stop xochitl
 systemctl start tarnish # only if you're using oxide
 systemctl start draft # only if you're using draft
 ```

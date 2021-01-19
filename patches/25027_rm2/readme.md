@@ -1,3 +1,6 @@
+### patch_17.2.05
+- fix: pincode flashing with suspend 
+- load suspend.png everytime
 ### patch_17.2.04
 - sleeping, sleepscreen , transparency 
 ### patch_17.2.03

@@ -75,7 +75,7 @@ NOTE: inverted for left-handers
 
 ## Other
 - **[BEST]** When a new notebook is created, the last used writing tool and its thickness are pre-selected.
- - Keyboards layout: EN, RU, NO, DE
+ - Keyboards layout: EN, BG, NO, DE
  - Sleep disabled when rM plugged in
 - **[BEST]** Restore recently deleted files by long-pressing them in the Recent Files list
 - On the homescreen: open the side-menu to see Recent Files list.

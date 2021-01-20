@@ -1,3 +1,7 @@
+### patch_17.1.07
+- restore thumbnails in listview
+- swipe down upper right (lefties left) corner to change cycle thickness
+- bugfix: zoom selection
 ### patch_17.1.06
 - lamy click/hold timeout reduced
 - some ui: remove width from menu circle in non zen modes

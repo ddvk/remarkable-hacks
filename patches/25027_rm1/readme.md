@@ -1,3 +1,7 @@
+### patch_17.1.06
+- lamy click/hold timeout reduced
+- some ui: remove width from menu circle in non zen modes
+- fix: width icon for lefthanders
 ### patch_17.1.05
 - enable sleep screen transparency and reenable sleeping.png
 ### patch_17.1.04

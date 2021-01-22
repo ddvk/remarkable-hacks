@@ -1,3 +1,6 @@
+### patch_17.1.08
+- bugfix: zoom selection icon
+- lamy pen timings
 ### patch_17.1.07
 - restore thumbnails in listview
 - swipe down upper right (lefties left) corner to change cycle thickness

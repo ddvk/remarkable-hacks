@@ -1,3 +1,5 @@
+### patch_17.1.09
+- fix: menu toggling when closing a document with swipe
 ### patch_17.1.08
 - bugfix: zoom selection icon
 - lamy pen timings

@@ -185,9 +185,18 @@ bspatch $backup_file $patched $workdir/$patch_name
 chmod +x $patched
 
 systemctl stop xochitl
+systemctl reset-failed xochitl
 #just to be sure, it goes into and endless reboot due to qml mismatch
 systemctl stop remarkable-fail
  
+# there can be only one (accessing the fb)
+systemctl stop rm2fb || true
+killall remarkable-shutdown || true
+
+# oxide / remux / prevent multiple xochitl instances
+killall xochitl || true
+
+
 cleanup
 echo ""
 echo "**********************************************"

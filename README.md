@@ -83,7 +83,7 @@ Note: the reMarkable 2 does not have buttons
 - had to remove the tooltips / tutorial
 
 # Installation
-Find the ssh password (**write it down and keep it safe**)  
+## Find the ssh password (**write it down and keep it safe**)  
 
 in the newest version:
     Settings->Help->Copyright and Licenses (under GPLv3 Compliance)
@@ -93,6 +93,10 @@ versions < 2.3:
 
 **It is really important to have the password somewhere, in case something goes wrong**
 
+## Finding the tablet IP
+
+Bellow the password they will list the avialable IP, get yours and save it for the next comands.
+
 
 
 ## Linux
@@ -100,13 +104,13 @@ You got this
 
 ## Windows 10
 open a command line prompt (Win-R, type cmd, enter)
-ssh root@10.11.99.1 (type the password)
-or install Putty and enter 10.11.99.1 as address and root for username
+ssh root@your.ip.address(type the password)
+or install Putty and enter your ip  as address and root for username
 paste the automagic line
 
 ## macOS
 open Spotlight (Cmd-Space) type Terminal, enter
-ssh root@10.11.99.1 (type the password)
+ssh root@your.ip.address (type the password)
 paste the automagic line
 
 # Automagic

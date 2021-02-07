@@ -37,11 +37,32 @@ function cleanup(){
     rm -fr /home/root/.cache/remarkable/xochitl/qmlcache/*
 }
 
-function rollback(){
+function purge(){
+    if [ ! -f "$backup_file" ]; then
+        echo "The backup file is missing"
+        exit 1
+    fi
+
+    hash=$(sha1sum "$backup_file" | cut -c 1-40)
+
+    if [ "$expectedhash" != "$hash" ]; then
+        echo "The backup $backup_file is not the original file (was it replaced/ deleted? / wrong hash), cowardly aborting..."
+        exit 1
+    fi
+
     systemctl stop xochitl
     cleanup
-    cp $backup_file /usr/bin/xochitl
+    cp "$backup_file" /usr/bin/xochitl
     systemctl start xochitl
+    echo -n "Remove all traces [Y/n]? "
+    read yn
+    case $yn in 
+        [Nn]* )
+            ;;
+            * ) 
+            rm -fr "$workdir"
+            ;;
+    esac
     exit 0
 }
 
@@ -166,8 +187,8 @@ esac
 
 backup_file="$workdir/$binary_name.$version"
 
-if [ $patch_name == "rollback" ]; then
-    rollback
+if [ $patch_name == "purge" ]; then
+    purge
     exit 0
 fi
 
@@ -175,7 +196,7 @@ if [ -z "$SKIP_DOWNLOAD" ]; then
     wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$version/$patch_name" -O "$workdir/$patch_name" || exit 1
 fi
 
-#make sure we keep the original, which is needed for additional patching or rollback
+#make sure we keep the original, which is needed for additional patching or purge
 if [ ! -f $backup_file ]; then
     cp /usr/bin/$binary_name $backup_file
 fi

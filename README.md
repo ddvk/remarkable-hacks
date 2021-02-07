@@ -174,7 +174,15 @@ put new fonts in `/home/root/ttf`,  do `fc-cache` and restart xochitl
 ## Making it permanent
 You should have typed 'Y' when asked
 
+## Uninstal / Removal
+```
+sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" _ purge
+```
+
+
 ## Revert in case things go terribly wrong
+** DON'T do a Factory Reset ** (this will regenerate the root password, unless there is no free space on the root partition)  
+Except when everything is working normally and you want to really remove all your documents.
 ssh
 ```
 systemctl stop xochitl
@@ -182,6 +190,7 @@ rm -fr .cache/remarkable/xochitl/qmlcache/*
 cp /home/rmhacks/xochitl.version /usr/bin/xochitl #where version is the current device version
 systemctl start xochitl
 ```
+
 
 
 # [Features compiled by u/TheTomatoes2](docs/features.md)

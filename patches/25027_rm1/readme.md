@@ -1,3 +1,5 @@
+### patch_17.1.10
+- fix: lnaguage switch / option to hide hide kbd switcher 
 ### patch_17.1.09
 - fix: menu toggling when closing a document with swipe
 ### patch_17.1.08

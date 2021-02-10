@@ -1,3 +1,5 @@
+### patch_17.2.07
+- fix: kbd 
 ### patch_17.2.06
 - swipe down (right/left corern) to cycle thickness
 ### patch_17.2.05

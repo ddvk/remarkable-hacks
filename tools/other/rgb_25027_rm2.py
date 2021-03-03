@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 ## rgb patch for xochitl (could work on future versions)
-import os,sys,mmap
-
-def binpatch(filename, offset, hexbytes):
-    patch = bytes.fromhex(hexbytes)
-
-    with open(file,'rb+') as out:
-        out.seek(offset)
-        out.write(patch)
+import sys,mmap
 
 diffs = [('01 c0 a0 13 14 c0 8d e5 0d 30 a0 03 04 c0 a0 03 08 c0 a0 13 10 c0 8d e5 18 30 a0 13',
           '03 c0 a0 13 14 c0 8d e5 0d 30 a0 03 04 c0 a0 03 00 c0 a0 13 10 c0 8d e5 04 30 a0 13')]

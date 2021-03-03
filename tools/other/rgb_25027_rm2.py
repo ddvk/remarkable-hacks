@@ -13,8 +13,8 @@ diffs = [('01 c0 a0 13 14 c0 8d e5 0d 30 a0 03 04 c0 a0 03 08 c0 a0 13 10 c0 8d 
           '03 c0 a0 13 14 c0 8d e5 0d 30 a0 03 04 c0 a0 03 00 c0 a0 13 10 c0 8d e5 04 30 a0 13')]
 
 if __name__ == "__main__":
-        if len(sys.argv) < 1:
-                sys.stderr.write("Usage:  xochitl")
+        if len(sys.argv) < 2:
+                sys.stderr.write("Usage:  xochitl\n")
                 sys.exit(1)
         file = sys.argv[1]
         with open(file,'rb+') as f:
@@ -30,6 +30,7 @@ if __name__ == "__main__":
                 if i < 0:
                     sys.stderr.write(f'pattern at index: {idx} not found\n')
                     sys.stderr.write(s)
+                    sys.stderr.write("\n")
                     sys.exit(1)
                 indexes.append((i, bytes_to_write))
             for i, r in indexes:

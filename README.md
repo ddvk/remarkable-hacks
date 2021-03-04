@@ -147,7 +147,7 @@ systemctl stop xochitl
 systemctl start tarnish # only if you're using oxide
 systemctl start draft # only if you're using draft
 ```
-If you forget to do this, you'll have two xochitls running and will see lines double.
+If you forget to do this, you'll have two xochitls, and the screen will be garbled.
 
 
 ## Timezones
@@ -160,7 +160,7 @@ To set a timezone, run this on the device, by setting one that matches your loca
 
 The device doesn't have all possible timezones. If yours is missing from the list, find a linux distro and copy the missing time zone to `/usr/share/zoneinfo/` then execute the above command with the new zone.
 
-## Extra fonts (e.g Japanese)
+## Extra fonts (e.g. Japanese)
 The rootfs doesn't have enough space, so you can do this (copy paste in the rm terminal)  
 ```
 mv /usr/share/fonts/ttf ~/ttf
@@ -175,7 +175,7 @@ put new fonts in `/home/root/ttf`,  do `fc-cache` and restart xochitl
 ## Making it permanent
 You should have typed 'Y' when asked
 
-## Uninstal / Removal
+## Uninstall / Removal
 ```
 sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" _ purge
 ```

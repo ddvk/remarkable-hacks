@@ -182,7 +182,8 @@ sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/pat
 
 
 ## Revert in case things go terribly wrong
-** DON'T do a Factory Reset ** (this will regenerate the root password, unless there is no free space on the root partition)  
+#**DON'T DO FACTORY RESET**
+(this will regenerate the root password, unless there is no free space on the root partition)  
 Except when everything is working normally and you want to really remove all your documents.
 ssh
 ```

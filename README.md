@@ -1,6 +1,6 @@
 # Binary patches for the rM
 
-## Versions 1.8.1.1-2.6.1.71
+## Versions 1.8.1.1-2.6.2.75
 Those are features that I find useful/wanted for me to have. If someone else would like to try them, they are welcome.
 
 
@@ -23,6 +23,8 @@ I am not affiliated with reMarkable AS in anyway
 
 
 ## Changes
+- rm2 [2.6.2.75](patches/26275_rm2/readme.md)
+- rm1 [2.6.2.75](patches/26275_rm1/readme.md)
 - rm2 [2.6.1.71](patches/26171_rm2/readme.md)
 - rm1 [2.6.1.71](patches/26171_rm1/readme.md)
 - rm2 2.5.1.45

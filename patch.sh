@@ -11,16 +11,20 @@ if [ ! -d $workdir ]; then
 fi;
 
 function checkspace(){
-    available=$(df / | tail -n1 | awk '{print $4}');
+    part=$1
+    needed=$2
+    available=$(df $part | tail -n1 | awk '{print $4}');
     let available=$available/1024
-    if [ $available -lt 3 ];then
-      echo "Less than 3MB free, ${available}MB"
+    if [ $available -lt $needed ];then
+      echo "Less than ${needed}MB free, ${available}MB"
       return 1;
     fi;
 }
 
-checkspace || (echo "Trying to free space..."; journalctl --vacuum-time=1m)
-checkspace || (echo "Aborting..."; exit 10)
+checkspace / 3 || (echo "Trying to free space..."; journalctl --vacuum-time=1m)
+checkspace / 3 || (echo "Aborting..."; exit 10)
+checkspace /home 10 || (echo "Not enough space on /home"; exit 10)
+
 echo "Disk space seems to be enough."
 
 trap onexit INT

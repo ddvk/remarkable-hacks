@@ -19,6 +19,8 @@ I am not affiliated with reMarkable AS in anyway
     <img src="docs/images/screenshot_25027_numpad.png" alt="Screenshot with numpad" width="300"/>
     <img src="docs/images/screenshot_25027_share.png" alt="Screenshot with extended options" width="300"/>
     <img src="docs/images/screenshot_recent_files.png" alt="Screenshot with recent files" width="300"/>
+    <img src="docs/images/ddvk_hacks_cheat_sheet.png" alt="cheat-sheet showing gestures" width="300"
+/>
 </p>
 
 

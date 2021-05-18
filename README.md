@@ -201,6 +201,15 @@ cp /home/rmhacks/xochitl.version /usr/bin/xochitl #where version is the current 
 systemctl start xochitl
 ```
 
+## Troubleshooting
+
+### Not enough space
+Can happen if you added additional sleep screens or templates to the root partition, also used to be a bug a long time ago.  
+Remove those.
+
+### SSH REMOTE HOST IDENTIFICATION CHANGED, something nasty blah blah
+The device regenerates the ssh host keys after every update.  
+Remove the offending line from `~/.ssh/known_hosts` or just delete the whole file.
 
 
 # [Features compiled by u/TheTomatoes2](docs/features.md)

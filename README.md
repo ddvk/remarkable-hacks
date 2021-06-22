@@ -144,19 +144,21 @@ The app should start, play with it, but press **CTRL-C** (Hold the Control key a
 patches are cumulative (the last one contains all previous changes and gets updated with bugfixes)
 a patch can be applied more than once, it's more of a snapshot really, you can go back to a previous version
 
-## Installation with oxide or draft
-The installation starts an instance of xochitl, but isn't aware of oxide or draft running, 
+## Installation with oxide, draft or remux
+The installation starts an instance of xochitl, but isn't aware of oxide, draft or remux running,
 which needs xochitl to be started in a different way. 
 Execute this before the installation if you've got oxide or draft running:
 ```shell
 systemctl stop tarnish # only if you're using oxide
 systemctl stop draft # only if you're using draft
+systemctl stop remux # only if you're using remux
 ```
 And this after the installation:
 ```shell
 systemctl stop xochitl
 systemctl start tarnish # only if you're using oxide
 systemctl start draft # only if you're using draft
+systemctl start remux # only if you're using remux
 ```
 If you forget to do this, you'll have two xochitls, and the screen will be garbled.
 

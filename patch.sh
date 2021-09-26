@@ -93,6 +93,12 @@ function auto_install(){
 
 currentVersion="$(</etc/version)"
 case $currentVersion in
+    "20210923144714" )
+        patch_name=${1:-patch_25.2.01}
+        version="2100324_rm2"
+        expectedhash="0990b599d412a1c6368985d872383b29b47ffab6"
+        echo "rM2 Version 2.10.0.324 - $patch_name"
+        ;;
     "20210812195523" )
         patch_name=${1:-patch_24.2.04}
         version="291217_rm2"
@@ -161,96 +167,6 @@ case $currentVersion in
         echo "rM1 Version 2.6.1.71 - $patch_name"
         ;;
 
-    "20201216142449" )
-        patch_name=${1:-patch_18.2.01}
-        version="25145_rm2"
-        expectedhash="c5337f952554ae40f0c97d81cf1c4a126c9cc593"
-        echo "rM2 Version 2.5.1.45 - $patch_name"
-        ;;
-    "20201127104549" )
-        patch_name=${1:-patch_17.2.07}
-        version="25027_rm2"
-        expectedhash="0ed1af968a31e816513d15321bd02b9625ccb073"
-        echo "rM2 Version 2.5.0.27 - $patch_name"
-        ;;
-    "20201127104105" )
-        patch_name=${1:-patch_17.1.10}
-        version="25027_rm1"
-        expectedhash="4296b9c6d7a66aadd12e1cf61a13b7b19504673d"
-        echo "rM1 Version 2.5.0.27 - $patch_name"
-        ;;
-    "20201028164335" )
-        patch_name=${1:-patch_16.1.06}
-        version="24130_rm1"
-        expectedhash="336529ce6e7ef9d6fadd30872708556ca8711f0b"
-        echo "rM1 Version 2.4.1.30 - $patch_name"
-        ;;
-    "20201028163830" )
-        patch_name=${1:-patch_16.2.03}
-        version="24130_rm2"
-        expectedhash="c88d155b7ca8c770240b2c00048968f8445f8115"
-        echo "rM2 Version 2.4.1.30 - $patch_name"
-        ;;
-    "20201016123042" )
-        patch_name=${1:-patch_15.2.01}
-        version="24027_rm2"
-        expectedhash="797f58ed93d2e22e7d77fcd9de6c6eb5d49a3a7f"
-        echo "rM2 Version 2.4.0.27 - $patch_name"
-        ;;
-    "20201016123325" )
-        patch_name=${1:-patch_15.1.02}
-        version="24027_rm1"
-        expectedhash="891e06535c0ae742eeaa3b9a20e9ff03d0f659d3"
-        echo "rM1 Version 2.4.0.27 - $patch_name"
-        ;;
-    "20200914085553" | "20200914090635" )
-        patch_name=${1:-patch_14.01}
-        version="23127"
-        expectedhash="596b02f401fb0ceb6a73df470fbab418b305cdbc"
-        echo "rM2 Version 2.3.1.27 - $patch_name"
-        ;;
-    "20200904144143" )
-        patch_name=${1:-patch_13.07}
-        version="23023"
-        expectedhash="7eb1ed8b75b1b282fd4ecf30ef19118d3a41fcc7"
-        echo "rM2 Version 2.3.0.23 - $patch_name"
-        ;;
-    "20200709160645" )
-        patch_name=${1:-patch_12.11}
-        version="23016"
-        expectedhash="005b05ef64f079aaf377d373cb7e2889a2aa774a"
-        echo "rM1 Version 2.3.0.16 - $patch_name"
-        ;;
-    "20200805214933" )
-        patch_name=${1:-patch_11.01}
-        version="22182"
-        expectedhash="c7d965972a5a6d2bf8503b1b09b52a89c422505b"
-        echo "rM2 Version 2.2.1.82 - $patch_name"
-        ;;
-    "20200528081414" )
-        patch_name=${1:-patch_10.10}
-        version="22048"
-        expectedhash="7e92c177df685972a699db6c4a7a918296447f74"
-        echo "Version 2.2.0.48 - $patch_name"
-        ;;
-    "20200320131825" )
-        patch_name=${1:-patch_09}
-        version="2113"
-        expectedhash="c8661fbd74a049134509dc22da415bb651d7feac"
-        echo "Version 2.1.1.3 - $patch_name"
-        ;;
-    "20191204111121" )
-        patch_name=${1:-patch_224}
-        version="2020"
-        expectedhash="don't remember"
-        echo "Version 2.0.2.0"
-        ;;
-    "20190904134033" )
-        patch_name=${1:-patch_07}
-        version="1811"
-        expectedhash="don't remember"
-        echo "Version 1.8.1.1"
-        ;;
     * )
         echo "The version the device is running is not supported, yet. $currentVersion"
         exit 1

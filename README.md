@@ -4,8 +4,12 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 
 ## Supported devices and firmware versions
-rm1: Versions 1.8.1.1-2.9.1.2XX
-rm2: Versions 1.8.1.1-2.10.0.324
+_Caution: The newest patch for firmware 2.10.0.xxx is supported on rm2 only!_
+
+This patch applies to the following versions:
+
+- rm1: Versions 1.8.1.1 - 2.9.1.2XX
+- rm2: Versions 1.8.1.1 - 2.10.0.324
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.
@@ -104,9 +108,12 @@ Note: the reMarkable 2 does not have buttons
 Find the ssh password (**write it down and keep it safe**)  
 
 in the newest version:
-    Settings->Help->Copyright and Licenses (under GPLv3 Compliance)
+
+Settings->Help->Copyright and Licenses (under GPLv3 Compliance)
+	
 versions < 2.3:
-    Settings->About->Copyright->General Information
+
+Settings->About->Copyright->General Information
 
 
 **It is really important to have the password somewhere, in case something goes wrong**
@@ -117,15 +124,21 @@ versions < 2.3:
 You got this
 
 ## Windows 10
-open a command line prompt (Win-R, type cmd, enter)
-ssh root@10.11.99.1 (type the password)
-or install Putty and enter 10.11.99.1 as address and root for username
-paste the automagic line
+- open a command line prompt (Win-R, type cmd, enter)
+- ssh root@10.11.99.1 
+- type the password
+- paste the automagic line
+
+_or_
+
+- install Putty and enter 10.11.99.1 as address and root for username
+- paste the automagic line
 
 ## macOS
-open Spotlight (Cmd-Space) type Terminal, enter
-ssh root@10.11.99.1 (type the password)
-paste the automagic line
+- open Spotlight (Cmd-Space) type Terminal, enter
+- ssh root@10.11.99.1
+- type the password
+- paste the automagic line
 
 # Automagic
 
@@ -204,7 +217,8 @@ sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/pat
 # **DON'T DO FACTORY RESET!**
 (this will regenerate the root password, unless there is no free space on the root partition)  
 Except when everything is working normally and you want to really remove all your documents.
-ssh
+
+ssh into your device and execute:
 ```
 systemctl stop xochitl
 rm -fr .cache/remarkable/xochitl/qmlcache/*
@@ -215,11 +229,13 @@ systemctl start xochitl
 ## Troubleshooting
 
 ### Not enough space
-Can happen if you added additional sleep screens or templates to the root partition, also used to be a bug a long time ago.  
+Can happen if you added additional sleep screens or templates to the root partition, also used to be a bug a long time ago. 
+ 
 Remove those.
 
 ### SSH REMOTE HOST IDENTIFICATION CHANGED, something nasty blah blah
 The device regenerates the ssh host keys after every update.  
+
 Remove the offending line from `~/.ssh/known_hosts` or just delete the whole file.
 
 

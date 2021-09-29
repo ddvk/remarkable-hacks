@@ -1,8 +1,11 @@
 # Binary patches for the rM
 
-## Versions 1.8.1.1-2.9.1.2XX
 Those are features that I find useful/wanted for me to have. If someone else would like to try them, they are welcome.
 
+
+## Supported devices and firmware versions
+rm1: Versions 1.8.1.1-2.9.1.2XX
+rm2: Versions 1.8.1.1-2.10.0.324
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.

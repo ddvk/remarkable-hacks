@@ -4,7 +4,7 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 
 ## Supported devices and firmware versions
-_Caution: The newest patch for firmware 2.10.0.xxx is supported on rm2 only!_
+_Caution: The newest patch for firmware 2.10.1.xxx is supported on rm2 only!_
 
 This patch applies to the following versions:
 

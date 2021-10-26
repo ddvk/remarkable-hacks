@@ -8,8 +8,8 @@ _Caution: The newest patch for firmware 2.10.1.xxx is supported on rm2 only!_
 
 This patch applies to the following versions:
 
-- rm1: Versions 1.8.1.1 - 2.10.0.324
-- rm2: Versions 1.8.1.1 - 2.10.1.332
+- rm1: Versions 1.8.1.1 - 2.10.2.356
+- rm2: Versions 1.8.1.1 - 2.10.2.356
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.
@@ -32,6 +32,8 @@ I am not affiliated with reMarkable AS in anyway
 
 
 ## Changes
+- rm2 [2.10.2.356](patches/2102356_rm2/readme.md)
+- rm1 [2.10.2.356](patches/2102356_rm1/readme.md)
 - rm2 [2.10.1.332](patches/2101332_rm2/readme.md)
 - rm2 [2.10.0.324](patches/2100324_rm2/readme.md)
 - rm1 [2.10.0.324](patches/2100324_rm1/readme.md)

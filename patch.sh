@@ -99,6 +99,12 @@ case $currentVersion in
         expectedhash="2cc077e0bc5eca53664d4692197d54b477fa02ba"
         echo "rM2 Version 2.10.2.356 - $patch_name"
         ;;
+    "20211014150444" )
+        patch_name=${1:-patch_27.1.01}
+        version="2102356_rm1"
+        expectedhash="a76509107656c03e866ec169ad317da9111f71be"
+        echo "rM1 Version 2.10.2.356 - $patch_name"
+        ;;
     "20210929140057" )
         patch_name=${1:-patch_26.2.02}
         version="2101332_rm2"

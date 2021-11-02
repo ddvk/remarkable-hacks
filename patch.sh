@@ -71,8 +71,12 @@ function purge(){
 }
 
 function auto_install(){
-    echo -n "If everything worked, do you want to make it permanent [N/y]? "
-    read yn
+    if [ -z "$1" ]; then
+        echo -n "If everything worked, do you want to make it permanent [N/y]? "
+        read yn
+    else
+        yn=$1
+    fi
     case $yn in 
         [Yy]* ) 
             echo "Making it permanent, DON'T DELETE $backup_file !!!"
@@ -236,13 +240,19 @@ killall remarkable-shutdown || true
 # oxide / remux / prevent multiple xochitl instances
 killall xochitl || true
 
+if [ -z "$MAKE_PERM" ]; then
 
-cleanup
-echo ""
-echo "**********************************************"
-echo "Trying to start the patched version..."
-echo -e "\e[1mYou can play around, press \e[5m\e[31mCTRL-C \e[39m\e[25mwhen done!\e[0m"
-echo "**********************************************"
-echo ""
-QT_LOGGING_RULES=*=false $patched -plugin evdevlamy  || echo "Did it crash?"
-cleanup
+   cleanup
+   echo ""
+   echo "**********************************************"
+   echo "Trying to start the patched version..."
+   echo -e "\e[1mYou can play around, press \e[5m\e[31mCTRL-C \e[39m\e[25mwhen done!\e[0m"
+   echo "**********************************************"
+   echo ""
+   QT_LOGGING_RULES=*=false $patched -plugin evdevlamy  || echo "Did it crash?"
+   cleanup
+else
+   auto_install "y"
+   cleanup
+   exit
+fi

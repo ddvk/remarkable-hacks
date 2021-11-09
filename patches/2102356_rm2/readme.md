@@ -1,3 +1,5 @@
+### patch_27.2.05
+- more letters qwerty keyboard 
 ### patch_27.2.04
 - fix swiped down in landscape mode 
 ### patch_27.2.03

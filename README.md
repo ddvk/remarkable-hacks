@@ -4,11 +4,10 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 
 ## Supported devices and firmware versions
-_Caution: The newest patch for firmware 2.10.1.xxx is supported on rm2 only!_
 
 This patch applies to the following versions:
 
-- rm1: Versions 1.8.1.1 - 2.10.2.356
+- rm1: Versions 1.8.1.1 - 2.10.3.379
 - rm2: Versions 1.8.1.1 - 2.10.3.379
 
 ## Disclaimer
@@ -33,6 +32,7 @@ I am not affiliated with reMarkable AS in anyway
 
 ## Changes
 - rm2 [2.10.3.379](patches/2103379_rm2/readme.md)
+- rm1 [2.10.3.379](patches/2103379_rm1/readme.md)
 - rm2 [2.10.2.356](patches/2102356_rm2/readme.md)
 - rm1 [2.10.2.356](patches/2102356_rm1/readme.md)
 - rm2 [2.10.1.332](patches/2101332_rm2/readme.md)

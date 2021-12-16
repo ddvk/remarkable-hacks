@@ -7,8 +7,8 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 This patch applies to the following versions:
 
-- rm1: Versions 1.8.1.1 - 2.10.3.379
-- rm2: Versions 1.8.1.1 - 2.10.3.379
+- rm1: Versions 1.8.1.1 - 2.11.0.442
+- rm2: Versions 1.8.1.1 - 2.11.0.442
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.

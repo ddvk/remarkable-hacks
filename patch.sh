@@ -240,7 +240,7 @@ if [ $patch_name == "purge" ]; then
 fi
 
 if [ -z "$SKIP_DOWNLOAD" ]; then
-    wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$version/$patch_name" -O "$workdir/$patch_name" || exit 1
+    wget "https://github.com/mmuell/remarkable-hacks/tree/bugfix/Support_Version_2121527_on_Remarkable_1/patches/$version/$patch_name" -O "$workdir/$patch_name" || exit 1
 fi
 
 #make sure we keep the original, which is needed for additional patching or purge

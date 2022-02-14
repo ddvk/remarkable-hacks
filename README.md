@@ -31,6 +31,7 @@ I am not affiliated with reMarkable AS in anyway
 
 
 ## Changes
+- rm1 [2.12.1.527](patches/2121527_rm1/readme.md)
 - rm2 [2.11.0.442](patches/2110442_rm2/readme.md)
 - rm1 [2.11.0.442](patches/2110442_rm1/readme.md)
 - rm2 [2.10.3.379](patches/2103379_rm2/readme.md)

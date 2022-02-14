@@ -49,11 +49,6 @@ function purge(){
 
     hash=$(sha1sum "$backup_file" | cut -c 1-40)
 
-    if [ "$expectedhash" != "$hash" ]; then
-        echo "The backup $backup_file is not the original file (was it replaced/ deleted? / wrong hash), cowardly aborting..."
-        exit 1
-    fi
-
     systemctl stop xochitl
     cleanup
     cp "$backup_file" /usr/bin/xochitl

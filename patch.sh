@@ -243,10 +243,6 @@ if [ ! -f $backup_file ]; then
     cp /usr/bin/$binary_name $backup_file
 fi
 
-
-bspatch $backup_file $patched $workdir/$patch_name
-chmod +x $patched
-
 systemctl stop xochitl
 systemctl reset-failed xochitl
 #just to be sure, it goes into and endless reboot due to qml mismatch

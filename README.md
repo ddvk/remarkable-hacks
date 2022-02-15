@@ -5,10 +5,10 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 ## Supported devices and firmware versions
 
-This patch applies to the following versions:
+Latest version supported:
 
-- rm1: Versions 1.8.1.1 - 2.11.0.442
-- rm2: Versions 1.8.1.1 - 2.11.0.442
+- rm1: 2.12.1.527
+- rm2: 2.12.1.527
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.
@@ -31,41 +31,10 @@ I am not affiliated with reMarkable AS in anyway
 
 
 ## Changes
+- rm2 [2.12.1.527](patches/2121527_rm2/readme.md)
+- rm1 [2.12.1.527](patches/2121527_rm1/readme.md)
 - rm2 [2.11.0.442](patches/2110442_rm2/readme.md)
 - rm1 [2.11.0.442](patches/2110442_rm1/readme.md)
-- rm2 [2.10.3.379](patches/2103379_rm2/readme.md)
-- rm1 [2.10.3.379](patches/2103379_rm1/readme.md)
-- rm2 [2.10.2.356](patches/2102356_rm2/readme.md)
-- rm1 [2.10.2.356](patches/2102356_rm1/readme.md)
-- rm2 [2.10.1.332](patches/2101332_rm2/readme.md)
-- rm2 [2.10.0.324](patches/2100324_rm2/readme.md)
-- rm1 [2.10.0.324](patches/2100324_rm1/readme.md)
-- rm2 [2.9.1.217](patches/291217_rm2/readme.md)
-- rm1 [2.9.1.236](patches/291236_rm1/readme.md)
-- rm2 [2.8.0.98](patches/28098_rm2/readme.md)
-- rm1 [2.8.0.98](patches/28098_rm1/readme.md)
-- rm2 [2.7.1.53](patches/27153_rm2/readme.md)
-- rm2 [2.7.0.51](patches/27051_rm2/readme.md)
-- rm1 [2.7.0.51](patches/27051_rm1/readme.md)
-- rm2 [2.6.2.75](patches/26275_rm2/readme.md)
-- rm1 [2.6.2.75](patches/26275_rm1/readme.md)
-- rm2 [2.6.1.71](patches/26171_rm2/readme.md)
-- rm1 [2.6.1.71](patches/26171_rm1/readme.md)
-- rm2 2.5.1.45
-- rm2 [2.5.0.27](patches/25027_rm2/readme.md)
-- rm1 [2.5.0.27](patches/25027_rm1/readme.md)
-- rm2 [2.4.1.30](patches/24130_rm2/readme.md)
-- rm1 [2.4.1.30](patches/24130_rm1/readme.md)
-- rm2 [2.4.0.27](patches/24027_rm2/readme.md)
-- rm1 [2.4.0.27](patches/24027_rm1/readme.md)
-- rm2 [2.3.1.27](patches/23127/readme.md)
-- rm2 [2.3.0.23](patches/23023/readme.md)
-- rm1 [2.3.0.16](patches/23016/readme.md)
-- rm2 [2.2.1.82](patches/22182/readme.md)
-- [2.2.0.48](patches/22048/readme.md)
-- [2.1.1.3](patches/2113/readme.md)
-- [2.0.2.0](patches/2020/readme.md)
-- [1.8.1.1](patches/1811/readme.md)
 
 
 ## Quick Doc

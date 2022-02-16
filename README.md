@@ -186,6 +186,10 @@ You should have typed 'Y' when asked
 ## Uninstall / Removal
 ```
 sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/patch.sh -O-)" _ purge
+
+or if offline
+
+/home/rmhacks/patch.sh purge
 ```
 
 

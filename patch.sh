@@ -247,6 +247,9 @@ fi
 
 if [ -z "$SKIP_DOWNLOAD" ]; then
     wget "https://github.com/ddvk/remarkable-hacks/raw/master/patches/$version/$patch_name" -O "$workdir/$patch_name" || exit 1
+    # save this file locally for offline uninstall
+    wget "https://github.com/ddvk/remarkable-hacks/raw/master/patch.sh" -O "$workdir/patch.sh" || exit 1
+    chmod +x "$workdir/patch.sh"
 fi
 
 #make sure we keep the original, which is needed for additional patching or purge

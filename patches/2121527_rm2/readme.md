@@ -1,3 +1,5 @@
+### patch_30.2.06
+- fix compact list view 
 ### patch_30.2.05
 - fix compact list view 
 ### patch_30.2.04

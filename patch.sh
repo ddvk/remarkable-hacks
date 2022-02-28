@@ -81,7 +81,7 @@ function auto_install(){
         [Yy]* ) 
             echo "Making it permanent, DON'T DELETE $backup_file !!!"
             mv $patched /usr/bin/$binary_name
-            echo "IMPORTANT: Do not forget to disable 'Automatic updates' on your reMarkable, to avoid losing the hack, unintentionally."
+            echo "IMPORTANT: Do not forget to disable 'Automatic updates' on your reMarkable to avoid losing the hack unintentionally."
             echo "Starting the UI..."
             systemctl start xochitl
             return 0

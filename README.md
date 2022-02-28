@@ -76,7 +76,7 @@ Note: the reMarkable 2 does not have buttons
 - email and hwr for scribbles on pdfs
 - extract scribbles from pdfs into new notebook (PDF page overview -> Select pages, tap Move, tap Move Out, tap New Notebook. Note that the scribble "pages" are literally removed from the PDF, but the PDF pages are not - so if you extract page 5, page 6 of your scribbles will now be on page 5 of your PDF. Probably not what you want! Make a backup copy first.)
 - clock (check the Timezones)
-- transparency support for suspended.png (only when using no lock passcode) and sleeping.png (after reboot)
+- support for transparent pixels in suspended.png (only when using no lock passcode) and sleeping.png (after reboot)
 
 ## Known issues
 - had to remove the tooltips / tutorial

@@ -8,7 +8,7 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 Latest version supported:
 
 - rm1: 2.12.1.527
-- rm2: 2.12.1.527
+- rm2: 2.12.2.573
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.
@@ -31,6 +31,7 @@ I am not affiliated with reMarkable AS in anyway
 
 
 ## Changes
+- rm2 [2.12.2.573](patches/2122573_rm2/readme.md)
 - rm2 [2.12.1.527](patches/2121527_rm2/readme.md)
 - rm1 [2.12.1.527](patches/2121527_rm2/readme.md)
 - rm2 [2.11.0.442](patches/2110442_rm2/readme.md)
@@ -78,9 +79,6 @@ Note: the reMarkable 2 does not have buttons
 - clock (check the Timezones)
 - support for transparent pixels in suspended.png (only when using no lock passcode) and sleeping.png (after reboot)
 
-## Known issues
-- had to remove the tooltips / tutorial
-
 # Installation
 Find the ssh password (**write it down and keep it safe**)  
 
@@ -94,7 +92,6 @@ Settings->About->Copyright->General Information
 
 
 **It is really important to have the password somewhere, in case something goes wrong**
-
 
 
 ## Linux
@@ -232,7 +229,8 @@ I wrote some tools, I change the code, I patch
 I don't own the source, the legality is dubious, not in reMarkable AS's best interest due to various reasons, etc
 
 #### Can you add this or that feature?
-Some things are hard, very time consuming or even impossible for my skill level. I prefer to take a more pragmatic approach and add things that are easy, but from which most users can benefit.
+Some things are hard, very time consuming or even impossible for my skill level. I prefer to take a more pragmatic approach and add things that are easy, but from which most users can benefit.  
+
 
 #### What happens when a new offical version comes out? 
 You lose the hacks when the device auto updates (If you want to prevent this disable auto updates). When the patches have been ported, you can install them again (bookmarks stay on the device and will reappear) 

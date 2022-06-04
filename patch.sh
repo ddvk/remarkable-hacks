@@ -97,6 +97,12 @@ function auto_install(){
 
 currentVersion="$(</etc/version)"
 case $currentVersion in
+    "20220519120030" )
+        patch_name=${1:-patch_33.2.01}
+        version="2130758_rm2"
+        expectedhash="c77016e4608ccab1b1e619a6ef2769a205312025"
+        echo "rM2 Version 2.13.0.758 - $patch_name"
+        ;;
     "20220330140034" )
         patch_name=${1:-patch_32.1.03}
         version="2123606_rm1"

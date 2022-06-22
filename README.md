@@ -7,8 +7,8 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 Latest version supported:
 
-- rm1: 2.12.3.606
-- rm2: 2.14.0.861 (wip)
+- rm1: 2.14.0.861
+- rm2: 2.14.0.861
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.

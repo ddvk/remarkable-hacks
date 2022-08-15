@@ -192,8 +192,7 @@ sh -c "$(wget https://raw.githubusercontent.com/ddvk/remarkable-hacks/master/pat
 
 or if offline
 
-chmod +x /home/rmhacks/patch.sh
-/home/rmhacks/patch.sh purge
+sh /home/rmhacks/patch.sh purge
 ```
 
 

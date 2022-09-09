@@ -7,8 +7,8 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 Latest version supported:
 
-- rm1: 2.14.3.977
-- rm2: 2.14.3.977
+- rm1: 2.14.3.1005
+- rm2: 2.14.3.1005
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.
@@ -31,6 +31,8 @@ I am not affiliated with reMarkable AS in anyway
 
 
 ## Changes
+- rm2 [2.14.3.1005](patches/21431005_rm2/readme.md)
+- rm1 [2.14.3.1005](patches/21431005_rm2/readme.md)
 - rm2 [2.14.3.977](patches/2143977_rm2/readme.md)
 - rm1 [2.14.3.977](patches/2143977_rm2/readme.md)
 - rm2 [2.14.1.866](patches/2141866_rm2/readme.md)

@@ -7,7 +7,7 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 Latest version supported:
 
-- rm1: 2.14.3.1047
+- rm1: 2.15.0.1067
 - rm2: 2.15.0.1067
 
 ## Disclaimer
@@ -32,6 +32,7 @@ I am not affiliated with reMarkable AS in anyway
 
 ## Changes
 - rm2 [2.15.0.1067](patches/21501067_rm2/readme.md)
+- rm1 [2.15.0.1067](patches/21501067_rm2/readme.md)
 - rm2 [2.14.3.1005](patches/21431005_rm2/readme.md)
 - rm1 [2.14.3.1005](patches/21431005_rm2/readme.md)
 - rm2 [2.14.3.977](patches/2143977_rm2/readme.md)

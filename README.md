@@ -7,8 +7,8 @@ Those are features that I find useful/wanted for me to have. If someone else wou
 
 Latest version supported:
 
-- rm1: 2.15.0.1067
-- rm2: 2.15.0.1067
+- rm1: 2.15.1.1189
+- rm2: 2.15.1.1189
 
 ## Disclaimer
 *The files are offered without any warranty and you will be violating the reMarkable AS EULA by using them.

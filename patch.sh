@@ -376,7 +376,10 @@ fi
 
 hash=$(sha1sum $backup_file | cut -c 1-40)
 if [ "$expectedhash" != "$hash" ]; then
-    echo "The backup $backup_file is not the original file (was it replaced/ deleted?), cowardly aborting..."
+    echo "The backup $backup_file is not the original file (was it replaced/ deleted? / wrong hash)"
+    echo "Expected hash: $expectedhash"
+    echo "Actual hash: $hash"
+    echo "cowardly aborting..."
     exit 1
 fi
 

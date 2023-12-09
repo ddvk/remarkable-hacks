@@ -17,7 +17,7 @@ function linkfolder() {
     if [ -L $origin ]; then
         echo "Link exists for $origin"
         if [ ! -d $newhome/$loc ]; then
-            echo "Creating folder $newhome/$log"
+            echo "Creating folder $newhome/$loc"
             mkdir -p $newhome/$loc
         fi
         echo "Linking $newhome/$loc to $origin"
